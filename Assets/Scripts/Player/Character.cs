@@ -58,14 +58,14 @@ public class Character : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetButton ("Utiliser")) {
+		if (Input.GetButtonDown ("Utiliser")) {
 			GetComponent<Inventaire>().TryUseItems();
 		}
 	}
 
 	public void RamasserObjet(GameObject obj){
 		//this.transform.GetComponent<Animation> ().CrossFade ("Pick");
-        GetComponent<Inventaire>().AddItem(gameObject);
+        GetComponent<Inventaire>().AddItem(obj);
     }
 
 

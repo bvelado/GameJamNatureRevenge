@@ -7,6 +7,11 @@ public class Inventaire : MonoBehaviour {
 
 	private List<GameObject> objets = new List<GameObject>();
 
+    public void Awake()
+    {
+        List<GameObject> objets = new List<GameObject>();
+    } 
+
 	public void AddItem(GameObject obj){
 		objets.Add(obj);
 	}
