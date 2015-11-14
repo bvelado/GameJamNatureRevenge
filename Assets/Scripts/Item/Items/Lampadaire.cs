@@ -4,7 +4,7 @@ public class Lampadaire : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
         // Heal le joueur
-        if(col.tag == "Joueur")
+        if(col.tag == "Player")
         {
             col.GetComponent<Character>().Heal();
         }

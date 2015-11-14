@@ -12,7 +12,7 @@ public class Item : MonoBehaviour {
 	};
 	public ItemType Type;
 	
-	public float respawnAfterSeconds = 10.0f;
+	public float respawnAfterSeconds = 30.0f;
     [HideInInspector]
     public Vector3 spawnPointPosition;
     [HideInInspector]
