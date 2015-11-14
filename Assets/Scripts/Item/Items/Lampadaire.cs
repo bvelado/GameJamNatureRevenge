@@ -2,7 +2,7 @@
 
 [ExecuteInEditMode]
 public class Lampadaire : MonoBehaviour {
-    public float radius;
+    public float radius = 4.0f;
 
     
     void Update()
