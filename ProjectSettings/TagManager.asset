@@ -9,6 +9,7 @@ TagManager:
   - HautesHerbes
   - r
   - Portail
+  - PortailDoor
   layers:
   - Default
   - TransparentFX
