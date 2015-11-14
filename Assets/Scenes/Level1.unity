@@ -997,6 +997,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 5bcae00322be12544a17ba9028c5dadf, type: 3}
   - {fileID: 7400002, guid: 5bcae00322be12544a17ba9028c5dadf, type: 3}
+  - {fileID: 7400014, guid: 5bcae00322be12544a17ba9028c5dadf, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -5448,7 +5449,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 61ec83d8e5581614098a9d92d3e3f434, type: 2}
+  - {fileID: 2100000, guid: eabb328bd41522d4497f76a164ca4536, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

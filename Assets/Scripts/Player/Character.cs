@@ -35,8 +35,9 @@ public class Character : MonoBehaviour {
        
 
         if (moveDirection != Vector3.zero) {
+
             this.transform.GetComponent<Animation>().CrossFade("Walk");
-			lastMoveDirection = moveDirection;
+            lastMoveDirection = moveDirection;
 			
 			moveDirection.y -= 0.2f * 3;
 			controller.Move(moveDirection * 0.3f * speed * course);
@@ -47,10 +48,11 @@ public class Character : MonoBehaviour {
             this.transform.GetComponent<Animation>().CrossFade("Iddle");
         }
 		if (Input.GetButton ("Course")) {
-			course = 1.5f; //On court
+            this.transform.GetComponent<Animation>().CrossFade("Run");
+            course = 1.5f; //On court
 		} else if (Input.GetButtonUp ("Course")) {
 			course = 1.0f; //On marche
-		}
+        }
 		if (Physics.Raycast (transform.position, new Vector3(0,1,0), out hit, 9)) {
 			if (hit.collider.tag=="HautesHerbes"){
 				speed=0.7f;
