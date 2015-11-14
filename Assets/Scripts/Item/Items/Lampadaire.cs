@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
 public class Lampadaire : MonoBehaviour {
-    public float radius = 4.0f;
-    
-    void Start()
+    void OnTriggerEnter(Collider col)
     {
-        GetComponent<CapsuleCollider>().radius = radius;
-        GetComponent<Light>().range = radius;
+        // Heal le joueur
+        if(col.tag == "Joueur")
+        {
+            col.GetComponent<Character>().Heal();
+        }
     }
 }

@@ -8,11 +8,6 @@ public class Item : MonoBehaviour {
     [HideInInspector]
     public Quaternion spawnPointRotation;
 
-    void Awake()
-    {
-        
-    }
-
     void Start()
     {
         spawnPointPosition = transform.position;
@@ -20,28 +15,24 @@ public class Item : MonoBehaviour {
     }
 	
 	public void Update () {
-        handleInput();
+
 	}
 
-    public virtual void handleInput()
+    public virtual void Use()
     {
-        // Bouchon pour test
-        // Remplacer par une detection de collision : OnTriggerEnter()
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            gameObject.SetActive(false);
-        }
+
     }
 
     void OnTriggerEnter(Collider col)
     {
         if (col.name == "Player") {
+            // col.GetComponent<Character>().RammasserObjet(this); 
 			gameObject.SetActive (false);
 		}
     }
 
     void OnDisable()
     {
-        //ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
+        ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
     }
 }
