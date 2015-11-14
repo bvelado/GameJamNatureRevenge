@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Inventaire : MonoBehaviour {
 
+
 	private List<GameObject> objets = new List<GameObject>();
 	// Use this for initialization
 	void Start () {
@@ -25,8 +26,8 @@ public class Inventaire : MonoBehaviour {
 
 	public void useObject(){
 		int tailleListe = objets.Count;
-		for (int i=0; i<tailleListe; i++){
-			//objets[i].use();
+		foreach (GameObject objet in objets){
+			objet.GetComponent<Item>().Use();
 		}
 	}
 }
