@@ -25,7 +25,6 @@ public class Inventaire : MonoBehaviour {
 	}
 
 	public void useObject(){
-		int tailleListe = objets.Count;
 		foreach (GameObject objet in objets){
 			objet.GetComponent<Item>().Use();
 		}

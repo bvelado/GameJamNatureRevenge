@@ -5,7 +5,7 @@ public class Character : MonoBehaviour {
 	
 	private CharacterController controller;
 	private Vector3 moveDirection;
-	private Vector3 lastMoveDirection;
+	public Vector3 lastMoveDirection;
 	private float horizMove;
 	private float vertMove;
 	private RaycastHit hit;
@@ -29,36 +29,41 @@ public class Character : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		horizMove=Input.GetAxis ("Horizontal");
-		vertMove=Input.GetAxis ("Vertical");
-		moveDirection = new Vector3(horizMove*0.5f,0,vertMove*0.5f);
+		horizMove = Input.GetAxis ("Horizontal");
+		vertMove = Input.GetAxis ("Vertical");
+		moveDirection = new Vector3 (horizMove * 0.5f, 0, vertMove * 0.5f);
        
 
-        if (moveDirection != Vector3.zero) {
-            this.transform.GetComponent<Animation>().CrossFade("Walk");
+		if (moveDirection != Vector3.zero) {
+			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
 			lastMoveDirection = moveDirection;
 			
 			moveDirection.y -= 0.2f * 3;
-			controller.Move(moveDirection * 0.3f * speed * course);
-			transform.FindChild("Armature").FindChild("Base").rotation = Quaternion.LookRotation(lastMoveDirection);
+			controller.Move (moveDirection * 0.3f * speed * course);
+			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
+		} else {
+			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
-        else
-        {
-            this.transform.GetComponent<Animation>().CrossFade("Iddle");
-        }
 		if (Input.GetButton ("Course")) {
 			course = 1.5f; //On court
 		} else if (Input.GetButtonUp ("Course")) {
 			course = 1.0f; //On marche
 		}
-		if (Physics.Raycast (transform.position, new Vector3(0,1,0), out hit, 9)) {
-			if (hit.collider.tag=="HautesHerbes"){
-				speed=0.7f;
-			}
-			else{
-				speed=1.0f;
+		if (Physics.Raycast (transform.position, new Vector3 (0, 1, 0), out hit, 9)) {
+			if (hit.collider.tag == "HautesHerbes") {
+				speed = 0.7f;
+			} else {
+				speed = 1.0f;
 			}
 		}
+
+		if (Input.GetButton ("Utiliser")) {
+			GetComponent<Inventaire>().useObject();
+		}
+	}
+
+	public void RamasserObjet(GameObject obj){
+
 	}
 
 
