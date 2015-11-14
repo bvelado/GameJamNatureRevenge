@@ -30,14 +30,14 @@ public class Item : MonoBehaviour {
 
     public void Use()
     {
-        Debug.Log(Type.ToString() + " " + gameObject.activeSelf);
-        Debug.DrawRay(player.transform.position, player.transform.forward, Color.red, 10.0f);
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (Physics.Raycast (player.transform.position, player.transform.forward, out hit, 9f)) {
 			if (hit.distance<10){
                 if ((hit.collider.tag=="Lucioles") && (Type == ItemType.Bocal)){
 					Debug.Log ("Vous pouvez utiliser l'objet");
-				} else if ((hit.collider.tag == "Portail") && (Type == ItemType.PiedDeBiche)) {
+				} else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
                     Debug.Log("Ouverture du portail");
+                    hit.collider.gameObject.SetActive(false);
                     tryRespawn = true;
                     gameObject.SetActive(false);
                 }
