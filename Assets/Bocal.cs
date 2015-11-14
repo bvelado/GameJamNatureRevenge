@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using System.Collections;
 
-public class Hache : Item
-{
+public class Bocal : Item {
     public override void Use()
     {
-        // Check si Arbre en face de lui
+        // Check si Lucioles en face de lui
 
-        // Si arbre, coupe l'arbre
+        // Si lucioles, remplit le bocal
+        // Désactive l'Item Lucioles
     }
 
     void OnTriggerEnter(Collider col)
