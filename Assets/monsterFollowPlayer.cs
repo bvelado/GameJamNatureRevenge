@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class montersFollowPlayer : monsterFollow
+public class monsterFollowPlayer : monstersFollow
 {
     void OnTriggerStay(Collider col)
     {
@@ -10,11 +10,21 @@ public class montersFollowPlayer : monsterFollow
             RaycastHit hit;
             if (Physics.Linecast(transform.position, col.transform.position, out hit))
             {
-                if (hit.collider.tag == "Player")
+                if (hit.collider.tag == "Player" && hit.distance < 15f)
                 {
-                    GetComponent<monsterFollow>().SetTransition(Transition.SawPlayer);
+                    GetComponent<monstersFollow>().SetTransition(Transition.SawPlayer);
                 }
             }
         }
     }
+
+
+    void OnTriggerExit(Collider col)
+    {
+        if ((col.tag == "Player") && (base.fsm.CurrentStateID == StateID.ChasingPlayer))
+        {
+            GetComponent<monstersFollow>().SetTransition(Transition.LostPlayer);
+        }
+    }
+
 }
