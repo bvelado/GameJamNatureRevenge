@@ -46,6 +46,7 @@ public class Character : MonoBehaviour {
 		}
 		if (Input.GetButton ("Course")) {
 			course = 1.5f; //On court
+			this.transform.GetComponent<Animation> ().CrossFade ("Run");
 		} else if (Input.GetButtonUp ("Course")) {
 			course = 1.0f; //On marche
 		}
@@ -63,7 +64,7 @@ public class Character : MonoBehaviour {
 	}
 
 	public void RamasserObjet(GameObject obj){
-
+		this.transform.GetComponent<Animation> ().CrossFade ("Pick");
 	}
 
 
