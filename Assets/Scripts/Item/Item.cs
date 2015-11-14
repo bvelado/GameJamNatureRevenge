@@ -35,10 +35,10 @@ public class Item : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.GetComponent<Character>() != null)
+        /*if(col.GetComponent<Character>() != null)
         {
             //col.GetComponent<Character>().PickItem();
-        }
+        }*/
     }
 
     void OnDisable()
