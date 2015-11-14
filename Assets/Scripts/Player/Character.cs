@@ -71,7 +71,8 @@ public class Character : MonoBehaviour {
 	}
 
 	public void RamasserObjet(GameObject obj){
-		//this.transform.GetComponent<Animation> ().CrossFade ("Pick");
+        //this.transform.GetComponent<Animation> ().CrossFade ("Pick");
+        picking = true;
         GetComponent<Inventaire>().AddItem(obj);
     }
 
