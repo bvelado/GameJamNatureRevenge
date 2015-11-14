@@ -9,6 +9,7 @@ public class Character : MonoBehaviour {
 	private float horizMove;
 	private float vertMove;
 	private RaycastHit hit;
+    private bool picking;
 
 	private float speed;
 	private float course;
@@ -24,6 +25,7 @@ public class Character : MonoBehaviour {
         _lives = _maxLives;
 		speed = 1.0f;
 		course = 1.0f;
+        picking = false;
 	}
 	
 	// Update is called once per frame
@@ -33,15 +35,21 @@ public class Character : MonoBehaviour {
 		vertMove = Input.GetAxis ("Vertical");
 		moveDirection = new Vector3 (horizMove * 0.5f, 0, vertMove * 0.5f);
        
+        if(picking)
+        {
+            Debug.Log("PICKING 2");
 
-		if (moveDirection != Vector3.zero) {
+            this.transform.GetComponent<Animation>().CrossFade("Pick");
+        }
+
+		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
 			lastMoveDirection = moveDirection;
 			
 			moveDirection.y -= 0.2f * 3;
 			controller.Move (moveDirection * 0.3f * speed * course);
 			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
-		} else {
+		} else if(!picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
@@ -58,16 +66,31 @@ public class Character : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetButton ("Utiliser")) {
+		if (Input.GetButton ("Utiliser"))
+        {
 			GetComponent<Inventaire>().useObject();
 		}
 	}
 
-	public void RamasserObjet(GameObject obj){
-		this.transform.GetComponent<Animation> ().CrossFade ("Pick");
+    
+
+	public void RamasserObjet(GameObject obj)
+    {
+        Debug.Log("PICKING");
+        picking = true;
+        Debug.Log(picking);
 	}
 
+    public void FinishPicking()
+    {
+        Debug.Log("FINISH PICKING");
+        picking = false;
+    }
 
+    public bool getPicking()
+    {
+        return this.picking;
+    }
 
 		
     public void Heal()

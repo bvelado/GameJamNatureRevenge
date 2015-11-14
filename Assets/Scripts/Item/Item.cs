@@ -47,14 +47,27 @@ public class Item : MonoBehaviour {
     {
         if (col.name == "Player") {
 			col.GetComponent<Character>().RamasserObjet(gameObject);
+         //   col.GetComponent<Character().
 			col.GetComponent<Inventaire>().ramassageObjet(gameObject);
-			OnDisable();
-			gameObject.SetActive(false);
-		}
+
+            StartCoroutine(Wait(1.5f));
+
+            
+
+        }
+    }
+
+    private IEnumerator Wait(float seconds)
+    {
+        Debug.Log("waiting");
+        yield return new WaitForSeconds(seconds);
+        OnDisable();
+        gameObject.SetActive(false);
+        Debug.Log("wait end");
     }
 
     void OnDisable()
     {
-		ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
+       ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);      
     }
 }
