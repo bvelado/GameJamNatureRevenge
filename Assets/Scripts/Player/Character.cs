@@ -30,6 +30,7 @@ public class Character : MonoBehaviour {
 		moveDirection.y -= 0.2f * 3;
 		controller.Move(moveDirection * 0.3f);
 		transform.FindChild("character").rotation = Quaternion.LookRotation(lastMoveDirection);
-		
+
 	}
+
 }

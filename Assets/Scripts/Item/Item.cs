@@ -27,12 +27,15 @@ public class Item : MonoBehaviour {
 
     public virtual void onPickedUp()
     {
+		gameObject.SetActive(false);
         // Behaviour
     }
 
     void OnTriggerEnter(Collider col)
     {
-        onPickedUp();
+		if (col.name == "Player") {
+			onPickedUp ();
+		}
     }
 
     void OnDisable()
