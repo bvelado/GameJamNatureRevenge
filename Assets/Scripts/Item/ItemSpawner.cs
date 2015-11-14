@@ -28,15 +28,16 @@ public class ItemSpawner : MonoBehaviour {
 
     public void RespawnAfter(float respawnAfterSeconds, GameObject item)
     {
-        StartCoroutine(SpawnItem(respawnAfterSeconds, item, item.GetComponent<Item>().spawnPoint));
+        StartCoroutine(SpawnItem(respawnAfterSeconds, item));
     }
 
-    IEnumerator SpawnItem(float respawnAfterSeconds, GameObject itemObject, Vector3 itemLocation)
+    IEnumerator SpawnItem(float respawnAfterSeconds, GameObject itemObject)
     {
         yield return new WaitForSeconds(respawnAfterSeconds);
         //Item item = ((GameObject)Instantiate(itemObject, itemLocation, Quaternion.identity)).GetComponent<Item>();
 
-        itemObject.transform.position = itemObject.GetComponent<Item>().spawnPoint;
+        itemObject.transform.position = itemObject.GetComponent<Item>().spawnPointPosition;
+        itemObject.transform.rotation = itemObject.GetComponent<Item>().spawnPointRotation;
         itemObject.SetActive(true);
     }
 }

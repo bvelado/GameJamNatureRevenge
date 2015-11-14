@@ -4,11 +4,19 @@ public class Item : MonoBehaviour {
 
     public float respawnAfterSeconds = 5.0f;
     [HideInInspector]
-    public Vector3 spawnPoint;
+    public Vector3 spawnPointPosition;
+    [HideInInspector]
+    public Quaternion spawnPointRotation;
 
     void Awake()
     {
-        spawnPoint = transform.position;
+        
+    }
+
+    void Start()
+    {
+        spawnPointPosition = transform.position;
+        spawnPointRotation = transform.rotation;
     }
 	
 	public void Update () {
