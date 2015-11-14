@@ -8,6 +8,10 @@ public class Character : MonoBehaviour {
 	private Vector3 lastMoveDirection;
 	private float horizMove;
 	private float vertMove;
+	private RaycastHit hit;
+
+	private float speed;
+	private float course;
 
     public int _maxHp, _maxLives;
     public int _hp, _lives;
@@ -18,6 +22,8 @@ public class Character : MonoBehaviour {
 		controller = transform.GetComponent<CharacterController>();
         _hp = _maxHp;
         _lives = _maxLives;
+		speed = 1.0f;
+		course = 1.0f;
 	}
 	
 	// Update is called once per frame
@@ -30,19 +36,34 @@ public class Character : MonoBehaviour {
 
         if (moveDirection != Vector3.zero) {
             this.transform.GetComponent<Animation>().CrossFade("Walk");
-            lastMoveDirection = moveDirection;
+			lastMoveDirection = moveDirection;
+			
+			moveDirection.y -= 0.2f * 3;
+			controller.Move(moveDirection * 0.3f * speed * course);
+			transform.FindChild("Armature").FindChild("Base").rotation = Quaternion.LookRotation(lastMoveDirection);
 		}
         else
         {
             this.transform.GetComponent<Animation>().CrossFade("Iddle");
         }
-
-		moveDirection.y -= 0.2f * 3;
-		controller.Move(moveDirection * 0.3f);
-		transform.FindChild("Armature").FindChild("Base").rotation = Quaternion.LookRotation(lastMoveDirection);
-
+		if (Input.GetButton ("Course")) {
+			course = 1.5f; //On court
+		} else if (Input.GetButtonUp ("Course")) {
+			course = 1.0f; //On marche
+		}
+		if (Physics.Raycast (transform.position, new Vector3(0,1,0), out hit, 9)) {
+			if (hit.collider.tag=="HautesHerbes"){
+				speed=0.7f;
+			}
+			else{
+				speed=1.0f;
+			}
+		}
 	}
 
+
+
+		
     public void Heal()
     {
         StartCoroutine(HealOneFloor());
