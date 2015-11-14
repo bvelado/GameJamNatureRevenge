@@ -66,6 +66,7 @@ public class Character : MonoBehaviour {
 			}
 		}
 
+<<<<<<< HEAD
 		if (Input.GetButton ("Utiliser"))
         {
 			GetComponent<Inventaire>().useObject();
@@ -80,6 +81,17 @@ public class Character : MonoBehaviour {
         picking = true;
         Debug.Log(picking);
 	}
+=======
+		if (Input.GetButtonDown ("Utiliser")) {
+			GetComponent<Inventaire>().TryUseItems();
+		}
+	}
+
+	public void RamasserObjet(GameObject obj){
+		//this.transform.GetComponent<Animation> ().CrossFade ("Pick");
+        GetComponent<Inventaire>().AddItem(obj);
+    }
+>>>>>>> origin/master
 
     public void FinishPicking()
     {

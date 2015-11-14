@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - HautesHerbes
   - r
+  - Portail
   layers:
   - Default
   - TransparentFX

@@ -6,25 +6,21 @@ public class Inventaire : MonoBehaviour {
 
 
 	private List<GameObject> objets = new List<GameObject>();
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+    public void Awake()
+    {
+        List<GameObject> objets = new List<GameObject>();
+    } 
 
-	public void ramassageObjet(GameObject obj){
+	public void AddItem(GameObject obj){
 		objets.Add(obj);
 	}
 
-	public void deleteObjet(GameObject obj){
+	public void RemoveItem(GameObject obj){
 		objets.Remove (obj);
 	}
 
-	public void useObject(){
+	public void TryUseItems(){
 		foreach (GameObject objet in objets){
 			objet.GetComponent<Item>().Use();
 		}
