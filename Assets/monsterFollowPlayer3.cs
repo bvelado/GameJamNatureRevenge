@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class monterFollowPlayer2Mesh : monsterFollow
+public class monsterFollowPlayer3 : monstersFollow
 {
+
     void OnTriggerStay(Collider col)
     {
         if ((col.tag == "Player") && (base.fsm.CurrentStateID == StateID.FollowingPath))
@@ -12,7 +13,7 @@ public class monterFollowPlayer2Mesh : monsterFollow
             {
                 if (hit.collider.tag == "Player")
                 {
-                    GetComponent<monsterFollow>().SetTransition(Transition.SawPlayer);
+                    GetComponent<monstersFollow>().SetTransition(Transition.SawPlayer);
                 }
             }
         }
