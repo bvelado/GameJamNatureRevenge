@@ -33,14 +33,12 @@ public class Item : MonoBehaviour {
         }
     }
 
-    public virtual void onPickedUp()
-    {
-        // Behaviour
-    }
-
     void OnTriggerEnter(Collider col)
     {
-        onPickedUp();
+        if(col.GetComponent<Character>() != null)
+        {
+            col.GetComponent<Character>().PickItem(Item);
+        }
     }
 
     void OnDisable()
