@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 40d793d51c4ef924886573145f313f74
+timeCreated: 1447520841
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Basemesh_FullbodyMale
+    100002: Cone001
+    100004: Helix001
+    100006: Helix001_MeshPart0
+    100008: Helix001_MeshPart1
+    100010: Helix001_MeshPart2
+    100012: Helix001_MeshPart3
+    100014: Helix001_MeshPart4
+    100016: Helix002
+    100018: Helix003
+    100020: Helix003_MeshPart0
+    100022: Helix003_MeshPart1
+    100024: Helix003_MeshPart2
+    100026: Helix003_MeshPart3
+    100028: Helix003_MeshPart4
+    100030: Helix003_MeshPart5
+    100032: Helix003_MeshPart6
+    100034: Helix003_MeshPart7
+    100036: Helix003_MeshPart8
+    100038: Helix008
+    100040: //RootNode
+    100042: Sphere001
+    400000: Basemesh_FullbodyMale
+    400002: Cone001
+    400004: Helix001
+    400006: Helix001_MeshPart0
+    400008: Helix001_MeshPart1
+    400010: Helix001_MeshPart2
+    400012: Helix001_MeshPart3
+    400014: Helix001_MeshPart4
+    400016: Helix002
+    400018: Helix003
+    400020: Helix003_MeshPart0
+    400022: Helix003_MeshPart1
+    400024: Helix003_MeshPart2
+    400026: Helix003_MeshPart3
+    400028: Helix003_MeshPart4
+    400030: Helix003_MeshPart5
+    400032: Helix003_MeshPart6
+    400034: Helix003_MeshPart7
+    400036: Helix003_MeshPart8
+    400038: Helix008
+    400040: //RootNode
+    400042: Sphere001
+    2300000: Basemesh_FullbodyMale
+    2300002: Cone001
+    2300004: Helix001_MeshPart0
+    2300006: Helix001_MeshPart1
+    2300008: Helix001_MeshPart2
+    2300010: Helix001_MeshPart3
+    2300012: Helix001_MeshPart4
+    2300014: Helix002
+    2300016: Helix003_MeshPart0
+    2300018: Helix003_MeshPart1
+    2300020: Helix003_MeshPart2
+    2300022: Helix003_MeshPart3
+    2300024: Helix003_MeshPart4
+    2300026: Helix003_MeshPart5
+    2300028: Helix003_MeshPart6
+    2300030: Helix003_MeshPart7
+    2300032: Helix003_MeshPart8
+    2300034: Helix008
+    2300036: Sphere001
+    3300000: Basemesh_FullbodyMale
+    3300002: Cone001
+    3300004: Helix001_MeshPart0
+    3300006: Helix001_MeshPart1
+    3300008: Helix001_MeshPart2
+    3300010: Helix001_MeshPart3
+    3300012: Helix001_MeshPart4
+    3300014: Helix002
+    3300016: Helix003_MeshPart0
+    3300018: Helix003_MeshPart1
+    3300020: Helix003_MeshPart2
+    3300022: Helix003_MeshPart3
+    3300024: Helix003_MeshPart4
+    3300026: Helix003_MeshPart5
+    3300028: Helix003_MeshPart6
+    3300030: Helix003_MeshPart7
+    3300032: Helix003_MeshPart8
+    3300034: Helix008
+    3300036: Sphere001
+    4300000: Basemesh_FullbodyMale
+    4300002: Sphere001
+    4300004: Cone001
+    4300006: Helix001_MeshPart0
+    4300008: Helix001_MeshPart1
+    4300010: Helix001_MeshPart2
+    4300012: Helix001_MeshPart3
+    4300014: Helix001_MeshPart4
+    4300016: Helix002
+    4300018: Helix003_MeshPart0
+    4300020: Helix003_MeshPart1
+    4300022: Helix003_MeshPart2
+    4300024: Helix003_MeshPart3
+    4300026: Helix003_MeshPart4
+    4300028: Helix003_MeshPart5
+    4300030: Helix003_MeshPart6
+    4300032: Helix003_MeshPart7
+    4300034: Helix003_MeshPart8
+    4300036: Helix008
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
