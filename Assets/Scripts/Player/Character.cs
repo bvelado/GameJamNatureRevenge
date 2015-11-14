@@ -26,15 +26,20 @@ public class Character : MonoBehaviour {
 		horizMove=Input.GetAxis ("Horizontal");
 		vertMove=Input.GetAxis ("Vertical");
 		moveDirection = new Vector3(horizMove*0.5f,0,vertMove*0.5f);
+       
 
-		
-		if (moveDirection != Vector3.zero) {
-			lastMoveDirection = moveDirection;
+        if (moveDirection != Vector3.zero) {
+            this.transform.GetComponent<Animation>().CrossFade("Walk");
+            lastMoveDirection = moveDirection;
 		}
+        else
+        {
+            this.transform.GetComponent<Animation>().CrossFade("Iddle");
+        }
 
 		moveDirection.y -= 0.2f * 3;
 		controller.Move(moveDirection * 0.3f);
-		transform.FindChild("character").rotation = Quaternion.LookRotation(lastMoveDirection);
+		transform.FindChild("Armature").FindChild("Base").rotation = Quaternion.LookRotation(lastMoveDirection);
 
 	}
 
