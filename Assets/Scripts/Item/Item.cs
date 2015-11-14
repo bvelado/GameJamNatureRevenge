@@ -50,16 +50,40 @@ public class Item : MonoBehaviour {
         if (col.name == "Player") {
             Debug.Log(gameObject.name + " rammassé.");
 			col.GetComponent<Character>().RamasserObjet(gameObject);
+<<<<<<< HEAD
+         //   col.GetComponent<Character().
+			col.GetComponent<Inventaire>().ramassageObjet(gameObject);
+
+            StartCoroutine(Wait(1.5f));
+
+            
+
+        }
+    }
+
+    private IEnumerator Wait(float seconds)
+    {
+        Debug.Log("waiting");
+        yield return new WaitForSeconds(seconds);
+        OnDisable();
+        gameObject.SetActive(false);
+        Debug.Log("wait end");
+=======
             tryRespawn = false;
 			gameObject.SetActive(false);
 		}
+>>>>>>> origin/master
     }
 
     void OnDisable()
     {
+<<<<<<< HEAD
+       ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);      
+=======
         if(tryRespawn)
         {
             ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
         }
+>>>>>>> origin/master
     }
 }
