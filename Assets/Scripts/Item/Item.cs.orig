@@ -35,13 +35,14 @@ public class Item : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.name == "Player") {
-			gameObject.SetActive (false);
-		}
+        /*if(col.GetComponent<Character>() != null)
+        {
+            //col.GetComponent<Character>().PickItem();
+        }*/
     }
 
     void OnDisable()
     {
-        //ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
+        ItemSpawner.Instance.RespawnAfter(respawnAfterSeconds, gameObject);
     }
 }
