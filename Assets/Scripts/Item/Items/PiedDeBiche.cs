@@ -22,9 +22,4 @@ public class PiedDeBiche : Item {
         //
         //}
     }
-
-    void OnEnable()
-    {
-        
-    }
 }

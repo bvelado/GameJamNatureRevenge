@@ -16,9 +16,4 @@ public class Hache : Item
         //
         //}
     }
-
-    void OnEnable()
-    {
-
-    }
 }
