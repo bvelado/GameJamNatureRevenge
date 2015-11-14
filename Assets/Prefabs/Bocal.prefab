@@ -8,7 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428152}
-  - 114: {fileID: 11497948}
+  - 65: {fileID: 6569210}
+  - 64: {fileID: 6415280}
+  - 114: {fileID: 11433334}
   m_Layer: 0
   m_Name: Bocal
   m_TagString: Untagged
@@ -142,8 +144,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -57.2999992, y: .0309999995, z: -56.9000015}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 421622}
   m_Father: {fileID: 0}
@@ -268,6 +270,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188872}
   m_Mesh: {fileID: 4300000, guid: 1e29a3cb4dc82e44c8b0219c85f26fa5, type: 3}
+--- !u!64 &6415280
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 0}
+--- !u!65 &6569210
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .178833067, y: .248804569, z: .267287165}
+  m_Center: {x: -.0199127197, y: .147731066, z: .00361633301}
 --- !u!95 &9503222
 Animator:
   serializedVersion: 3
@@ -285,7 +311,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11497948
+--- !u!114 &11433334
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -293,9 +319,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 114930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b0a4bab7ce5141478fd6be403884e76, type: 3}
+  m_Script: {fileID: 11500000, guid: 775547c2b43475247b87c7e2d47525dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 0
   respawnAfterSeconds: 5
   spawnPointPosition: {x: 0, y: 0, z: 0}
   spawnPointRotation: {x: 0, y: 0, z: 0, w: 0}
