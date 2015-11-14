@@ -348,6 +348,8 @@ ModelImporter:
     100680: Spine 3
     100682: Spine1 3
     100684: Spine2 3
+    100686: Bandeau
+    100688: Cheveux
     400000: Annulaire droit
     400002: Annulaire droit.001
     400004: Annulaire droit.002
@@ -691,8 +693,14 @@ ModelImporter:
     400680: Spine 3
     400682: Spine1 3
     400684: Spine2 3
+    400686: Bandeau
+    400688: Cheveux
+    2300000: Cheveux
+    3300000: Cheveux
     4300000: Sphere
     4300002: Basemesh_FullbodyMale
+    4300004: Cheveux
+    4300006: Bandeau
     7400000: Iddle
     7400002: Walk
     7400004: Walk|Iddle
@@ -706,6 +714,8 @@ ModelImporter:
     11100000: //RootNode
     13700000: Basemesh_FullbodyMale
     13700002: Sphere
+    13700004: Bandeau
+    13700006: Cheveux
   materials:
     importMaterials: 1
     materialName: 0
