@@ -33,4 +33,15 @@ public class Character : MonoBehaviour {
 
 	}
 
+    public void Heal()
+    {
+        StartCoroutine(HealOneFloor());
+    }
+
+    IEnumerator HealOneFloor()
+    {
+        // Heale un pallier entier de vie
+        yield return null;
+    }
+
 }
