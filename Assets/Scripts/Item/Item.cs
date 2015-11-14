@@ -37,7 +37,7 @@ public class Item : MonoBehaviour {
     {
         if(col.GetComponent<Character>() != null)
         {
-            col.GetComponent<Character>().PickItem(Item);
+            //col.GetComponent<Character>().PickItem();
         }
     }
 
