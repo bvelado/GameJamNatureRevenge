@@ -27,6 +27,7 @@ public class LightComportement : MonoBehaviour
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<AudioSource>().Play();
                 GameObject.FindGameObjectWithTag("Musique2").GetComponent<AudioSource>().Stop();
             }
+
         }
     }
 }
