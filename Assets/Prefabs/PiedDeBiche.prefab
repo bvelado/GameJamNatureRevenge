@@ -41,8 +41,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410544}
-  - 114: {fileID: 11420794}
-  - 136: {fileID: 13632642}
+  - 65: {fileID: 6519970}
+  - 114: {fileID: 11481344}
   m_Layer: 0
   m_Name: PiedDeBiche
   m_TagString: Untagged
@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.28746605, y: 0, z: 3.29138947}
+  m_LocalPosition: {x: 122.465454, y: -.236856222, z: 97.1850281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 417360}
@@ -119,6 +119,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103868}
   m_Mesh: {fileID: 4300000, guid: 2b5a34c688d16db4c87434d109a76310, type: 3}
+--- !u!65 &6519970
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .226643115, y: 1.05442166, z: .0972034037}
+  m_Center: {x: -.011100769, y: .779683709, z: -.000923156738}
 --- !u!95 &9507254
 Animator:
   serializedVersion: 3
@@ -136,7 +148,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11420794
+--- !u!114 &11481344
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -148,22 +160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 3
-  respawnAfterSeconds: 5
+  respawnAfterSeconds: 30
   spawnPointPosition: {x: 0, y: 0, z: 0}
   spawnPointRotation: {x: 0, y: 0, z: 0, w: 0}
---- !u!136 &13632642
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.02999997, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
