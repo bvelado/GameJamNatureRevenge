@@ -62,7 +62,6 @@ public class Item : MonoBehaviour {
 
                     StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
 				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
-					Debug.Log("Ca brule");
                     StartCoroutine(DepopRonces(player, hit));
                     
 				}
