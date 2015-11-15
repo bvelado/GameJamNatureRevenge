@@ -10,8 +10,19 @@ public class Character : MonoBehaviour {
 	private float vertMove;
 	private RaycastHit hit;
 
+    //Gestion Audio
+
+    public AudioClip touch;
+    public AudioClip death;
+    public AudioClip step1;
+    public AudioClip step2;
+    public AudioClip attack;
+    public AudioClip throwItem;
+    AudioSource audio;
+
     private bool picking;
     private bool usingItem;
+    private bool touched;
     [HideInInspector]
     public bool isLighting;
     private bool dying;
@@ -34,10 +45,13 @@ public class Character : MonoBehaviour {
         picking = false;
         isLighting = true;
         dying = false;
+        touched = false;
         StartCoroutine(refreshHeal());
 
         HUD.Instance.InitHP(_maxHp);
         HUD.Instance.InitLives();
+
+        audio = GetComponent<AudioSource>();
     }
 
     
@@ -118,8 +132,7 @@ public class Character : MonoBehaviour {
         //TODO /!\ Dans la fonction declencher la fonction GameOver de la classe Globale au jeu
     }
 
-
-
+  
 
 
     // Update is called once per frame
@@ -145,6 +158,11 @@ public class Character : MonoBehaviour {
             this.transform.GetComponent<Animation>().CrossFade("death2");
         }
 
+        if(touched)
+        {
+            this.transform.GetComponent<Animation>().CrossFade("hit");
+        }
+
 		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
 			lastMoveDirection = moveDirection;
@@ -152,7 +170,7 @@ public class Character : MonoBehaviour {
 			moveDirection.y -= 0.2f * 3;
 			controller.Move (moveDirection * 0.3f * speed * course);
 			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
-		} else if(!picking && !usingItem &&!dying) {
+		} else if(!picking && !usingItem &&!dying &&!touched) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
@@ -206,8 +224,7 @@ public class Character : MonoBehaviour {
     }
 
     public void endUsingItem()
-    {
-        
+    {       
         this.usingItem = false;
     }
 		
@@ -215,6 +232,13 @@ public class Character : MonoBehaviour {
     {
         StartCoroutine(HealOneFloor());
     }
+
+    public void endTouched()
+    {
+        touched = false;
+    }
+
+
 
     IEnumerator HealOneFloor()
     {
@@ -243,6 +267,34 @@ public class Character : MonoBehaviour {
         } else
         {
             _hp -= hp*5;
+        }
+    }
+
+    //PARTIE SON
+
+    public void song(AudioClip song)
+    {
+        audio.PlayOneShot(song);
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        Debug.Log("COLLISION !!!!");
+        Debug.Log("TAG = " + col.gameObject.tag);
+
+        if(col.gameObject.tag == "Enemy")
+        {
+            touched = true;
+        }
+
+        
+    }
+
+    void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.tag == "ZonePlante")
+        {
+            col.GetComponent<PlanteCarnivore>().becomeAgressive();
         }
     }
 
