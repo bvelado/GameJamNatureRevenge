@@ -22,6 +22,8 @@ public class Character : MonoBehaviour {
     public int _maxHp, _maxLives;
     [HideInInspector]
     public int _hp, _lives;
+
+	private bool touched;
 	
 	// Use this for initialization
 	void Start ()
@@ -146,6 +148,11 @@ public class Character : MonoBehaviour {
 			StartCoroutine(Mort ());
         }
 
+		if(touched)
+		{
+			this.transform.GetComponent<Animation>().CrossFade("hit");
+		}
+
 		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
 			lastMoveDirection = moveDirection;
@@ -153,7 +160,7 @@ public class Character : MonoBehaviour {
 			moveDirection.y -= 0.2f * 3;
 			controller.Move (moveDirection * 0.3f * speed * course);
 			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
-		} else if(!picking && !usingItem &&!dying) {
+		} else if(!picking && !usingItem &&!dying &&!touched) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
@@ -217,6 +224,11 @@ public class Character : MonoBehaviour {
         StartCoroutine(HealOneFloor());
     }
 
+	public void endTouched()
+	{
+		touched = false;
+	}
+
     IEnumerator HealOneFloor()
     {
         // Heale un pallier entier de vie
@@ -252,6 +264,34 @@ public class Character : MonoBehaviour {
 		HUD.Instance.showDeathMessage();
 		yield return new WaitForSeconds (4.0f);
 		Application.LoadLevel("Level1");
+	}
+
+	//PARTIE SON
+	
+	public void song(AudioClip song)
+	{
+		GetComponent<AudioSource>().PlayOneShot(song);
+	}
+	
+	void OnTriggerEnter(Collider col)
+	{
+		Debug.Log("COLLISION !!!!");
+		Debug.Log("TAG = " + col.gameObject.tag);
+		
+		if(col.gameObject.tag == "Enemy")
+		{
+			touched = true;
+		}
+		
+		
+	}
+	
+	void OnTriggerStay(Collider col)
+	{
+		if (col.gameObject.tag == "ZonePlante")
+		{
+			col.GetComponent<PlanteCarnivore>().becomeAgressive();
+		}
 	}
 
 }

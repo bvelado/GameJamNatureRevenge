@@ -2923,7 +2923,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 413350, guid: d62b61862ef91da40811ee8bbefd6303, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 413350, guid: d62b61862ef91da40811ee8bbefd6303, type: 2}
       propertyPath: m_LocalPosition.z
