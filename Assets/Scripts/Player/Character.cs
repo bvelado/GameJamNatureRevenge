@@ -14,6 +14,7 @@ public class Character : MonoBehaviour {
     private bool usingItem;
     [HideInInspector]
     public bool isLighting;
+    private bool dying;
 
 	private float speed;
 	private float course;
@@ -32,6 +33,7 @@ public class Character : MonoBehaviour {
 		course = 1.0f;
         picking = false;
         isLighting = true;
+        dying = false;
         StartCoroutine(refreshHeal());
 
         HUD.Instance.InitHP(_maxHp);
@@ -51,16 +53,18 @@ public class Character : MonoBehaviour {
             }
             else
             {
-                _hp--;
+                _hp = _hp -5;
                 if (_hp < 1)
                 {
+                    Debug.Log("VIES AVANT LA REDUCTION = " + _lives);
                     _lives--;
+                    Debug.Log("VIES APRES LA REDUCTION = " + _lives);
                     HUD.Instance.DecreaseLive();
-                    if (_lives > -1)
+                    Debug.Log("VIES APRES LE HUD = " + _lives);
+                    if (_lives > 0)
                     {
                         // Perd 1 vie
                         _hp = _maxHp;
-                        _lives--;
                         Debug.Log("PERTE D'UNE VIE");
 
                         if(_lives == 2 || _lives == 1)
@@ -69,6 +73,10 @@ public class Character : MonoBehaviour {
                             mutation(_lives);
                         }
                         
+                    }
+                    else if(_lives == 0)
+                    {
+                        dying = true;
                     }
                 }
             }
@@ -101,8 +109,21 @@ public class Character : MonoBehaviour {
         }
 
     }
-	// Update is called once per frame
-	void Update ()
+
+    //FONCTION ENVOI GAMEOVER
+    
+    
+    public void setGameOver()
+    {
+        //TODO /!\ Dans la fonction declencher la fonction GameOver de la classe Globale au jeu
+    }
+
+
+
+
+
+    // Update is called once per frame
+    void Update ()
 	{
 		horizMove = Input.GetAxis ("Horizontal");
 		vertMove = Input.GetAxis ("Vertical");
@@ -119,6 +140,11 @@ public class Character : MonoBehaviour {
             this.transform.GetComponent<Animation>().CrossFade("UseItem");
         }
 
+        if(dying)
+        {
+            this.transform.GetComponent<Animation>().CrossFade("death2");
+        }
+
 		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
 			lastMoveDirection = moveDirection;
@@ -126,7 +152,7 @@ public class Character : MonoBehaviour {
 			moveDirection.y -= 0.2f * 3;
 			controller.Move (moveDirection * 0.3f * speed * course);
 			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
-		} else if(!picking && !usingItem) {
+		} else if(!picking && !usingItem &&!dying) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
@@ -209,7 +235,7 @@ public class Character : MonoBehaviour {
             }
         } else
         {
-            _hp -= hp;
+            _hp -= hp*5;
         }
     }
 
