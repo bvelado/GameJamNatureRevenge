@@ -49,7 +49,8 @@ public class Item : MonoBehaviour {
                     StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
 				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
 					Debug.Log("Ca brule");
-					player.GetComponent<Character>().startUsingItem();
+                    StartCoroutine(DepopRonces(player, hit));
+                    
 				}
 			}
 		}
@@ -71,6 +72,9 @@ public class Item : MonoBehaviour {
         isPickedUp = true;
     }
 
+
+
+    //---------------------------------- PORTAIL
     private IEnumerator AnimPortailAndDepop(Transform portail)
     {
         yield return new WaitForSeconds(1.5f);
@@ -89,6 +93,24 @@ public class Item : MonoBehaviour {
 
         yield return null;
     }
+
+
+    //---------------------------------- RONCES
+    private IEnumerator DepopRonces(GameObject player, RaycastHit hit)
+    {
+        player.GetComponent<Character>().startUsingItem();
+        yield return new WaitForSeconds(1.5f);
+
+        // Anime le feu des ronces
+        hit.collider.transform.FindChild("FireParticles").gameObject.SetActive(true);
+        hit.collider.transform.FindChild("FireParticles").GetComponent<ParticleSystem>().Play();
+        yield return new WaitForSeconds(5f);
+        Destroy(hit.collider.gameObject);
+       
+
+        yield return null;
+    }
+
 
     void OnDisable()
     {
