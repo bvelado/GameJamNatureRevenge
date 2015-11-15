@@ -61,8 +61,10 @@ public class Item : MonoBehaviour {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
 
-                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
-				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
+                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent));
+                    GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
+                }
+                else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
                     StartCoroutine(DepopRonces(player, hit));
 				}
 			}
@@ -73,7 +75,7 @@ public class Item : MonoBehaviour {
     {
         Debug.Log("Detach Lucioles");
         StartCoroutine(DetachBocalFromPlayer(15.0f));
-        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection*1200.0f);
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection.normalized*600.0f);
         GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
         HUD.Instance.RemoveItemHUD(Type);
     }
@@ -116,7 +118,7 @@ public class Item : MonoBehaviour {
             hit.collider.gameObject.gameObject.SetActive(false);
             tryRespawn = true;
             gameObject.SetActive(false);
-            GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
+            
             HUD.Instance.RemoveItemHUD(Type);
             yield return null;
         }
@@ -129,6 +131,8 @@ public class Item : MonoBehaviour {
         if(!isAttachedToPlayer)
         {
             yield return new WaitForSeconds(seconds);
+
+            gameObject.tag = "Untagged";
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             transform.FindChild("Model").gameObject.SetActive(false);
@@ -143,6 +147,9 @@ public class Item : MonoBehaviour {
     IEnumerator DetachBocalFromPlayer(float seconds)
     {
         if (isAttachedToPlayer) {
+
+            gameObject.tag = "BocalLucioles";
+
             transform.parent = null;
             transform.FindChild("Model").gameObject.SetActive(true);
             transform.FindChild("Collider").gameObject.SetActive(true);
