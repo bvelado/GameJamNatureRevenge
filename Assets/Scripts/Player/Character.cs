@@ -12,6 +12,8 @@ public class Character : MonoBehaviour {
 
     private bool picking;
     private bool usingItem;
+    [HideInInspector]
+    public bool isLighting;
 
 	private float speed;
 	private float course;
