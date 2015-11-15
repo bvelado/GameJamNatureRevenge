@@ -14,9 +14,8 @@ public class PlanteCraintive : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		Debug.Log ("entré");
 		if (col.tag == "BocalLucioles") {
-			Debug.Log ("Bocal");
+			Debug.Log ("Bocal a tué la plante");
 			Destroy(gameObject);
 		}
 	}

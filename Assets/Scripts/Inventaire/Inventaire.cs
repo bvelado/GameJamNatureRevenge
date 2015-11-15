@@ -29,11 +29,12 @@ public class Inventaire : MonoBehaviour {
     {
         foreach(GameObject objet in objets)
         {
-            Debug.Log("Pas lancé");
+            
             if (objet.GetComponent<Item>().Type == Item.ItemType.BocalLucioles)
             {
                 if(objet.GetComponent<Item>().isAttachedToPlayer)
                 {
+                    Debug.Log("Lancé");
                     objet.GetComponent<Item>().Throw();
                 }
                 
