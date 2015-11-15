@@ -6,6 +6,7 @@ public class Item : MonoBehaviour {
 	public enum ItemType
 	{
 		Bocal,
+        BocalLucioles,
 		Hache,
 		PiedDeBiche,
 		Torche
@@ -36,7 +37,8 @@ public class Item : MonoBehaviour {
 			if (hit.distance<10){
                 if ((hit.collider.tag=="Lucioles") && (Type == ItemType.Bocal)){
 					Debug.Log ("Vous pouvez utiliser l'objet");
-				} else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
+                    HUD.Instance.RemoveItemHUD(Type);
+                } else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
                    
@@ -46,6 +48,7 @@ public class Item : MonoBehaviour {
                     hit.collider.gameObject.SetActive(false);
                     tryRespawn = true;
                     gameObject.SetActive(false);
+                    HUD.Instance.RemoveItemHUD(Type);
                 }
 			}
 		}
@@ -55,11 +58,11 @@ public class Item : MonoBehaviour {
     {
         if (col.name == "Player") {
 			col.GetComponent<Character>().RamasserObjet(gameObject);
-            StartCoroutine(Wait(1.5f));
+            StartCoroutine(WaitAndDepop(1.5f));
         }
     }
 
-    private IEnumerator Wait(float seconds)
+    private IEnumerator WaitAndDepop(float seconds)
     {
         Debug.Log("waiting");
         yield return new WaitForSeconds(seconds);

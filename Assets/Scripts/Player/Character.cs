@@ -80,6 +80,8 @@ public class Character : MonoBehaviour {
         //this.transform.GetComponent<Animation> ().CrossFade ("Pick");
         picking = true;
         GetComponent<Inventaire>().AddItem(obj);
+        Item.ItemType type = obj.GetComponent<Item>().Type;
+        HUD.Instance.AddItemHUD(type);
     }
 
     public void FinishPicking()
