@@ -164,14 +164,15 @@ public class Item : MonoBehaviour {
     //---------------------------------- RONCES
     private IEnumerator DepopRonces(GameObject player, RaycastHit hit)
     {
+		GameObject buisson = hit.collider.gameObject; 
         player.GetComponent<Character>().startUsingItem();
         yield return new WaitForSeconds(1.5f);
 
         // Anime le feu des ronces
-        hit.collider.transform.FindChild("FireParticles").gameObject.SetActive(true);
-        hit.collider.transform.FindChild("FireParticles").GetComponent<ParticleSystem>().Play();
+        buisson.transform.FindChild("FireParticles").gameObject.SetActive(true);
+		buisson.transform.FindChild("FireParticles").GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(5f);
-        Destroy(hit.collider.gameObject);
+		Destroy(buisson);
        
 
         yield return null;
