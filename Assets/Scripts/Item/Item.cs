@@ -61,8 +61,10 @@ public class Item : MonoBehaviour {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
 
-                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
-				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
+                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent));
+                    GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
+                }
+                else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
                     StartCoroutine(DepopRonces(player, hit));
 				}
 			}
@@ -116,7 +118,7 @@ public class Item : MonoBehaviour {
             hit.collider.gameObject.gameObject.SetActive(false);
             tryRespawn = true;
             gameObject.SetActive(false);
-            GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
+            
             HUD.Instance.RemoveItemHUD(Type);
             yield return null;
         }
