@@ -34741,7 +34741,11 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
+<<<<<<< HEAD
   - time: .208333328
+=======
+  - time: .291666657
+>>>>>>> ca9862e1b7bcf8602d8e87195f1876bcbf6a06d5
     functionName: song
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: b630ee91499c47743a1d24d87b513f3e,

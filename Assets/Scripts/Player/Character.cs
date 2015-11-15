@@ -121,8 +121,7 @@ public class Character : MonoBehaviour {
         //TODO /!\ Dans la fonction declencher la fonction GameOver de la classe Globale au jeu
     }
 
-
-
+  
 
 
     // Update is called once per frame
@@ -148,10 +147,17 @@ public class Character : MonoBehaviour {
 			StartCoroutine(Mort ());
         }
 
+<<<<<<< HEAD
 		if(touched)
 		{
 			this.transform.GetComponent<Animation>().CrossFade("hit");
 		}
+=======
+        if(touched)
+        {
+            this.transform.GetComponent<Animation>().CrossFade("hit");
+        }
+>>>>>>> ca9862e1b7bcf8602d8e87195f1876bcbf6a06d5
 
 		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
@@ -214,8 +220,7 @@ public class Character : MonoBehaviour {
     }
 
     public void endUsingItem()
-    {
-        
+    {       
         this.usingItem = false;
     }
 		
@@ -224,10 +229,19 @@ public class Character : MonoBehaviour {
         StartCoroutine(HealOneFloor());
     }
 
+<<<<<<< HEAD
 	public void endTouched()
 	{
 		touched = false;
 	}
+=======
+    public void endTouched()
+    {
+        touched = false;
+    }
+
+
+>>>>>>> ca9862e1b7bcf8602d8e87195f1876bcbf6a06d5
 
     IEnumerator HealOneFloor()
     {
@@ -259,6 +273,7 @@ public class Character : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
 	IEnumerator Mort(){
 		this.transform.GetComponent<Animation>().CrossFade("death2");
 		HUD.Instance.showDeathMessage();
@@ -293,5 +308,34 @@ public class Character : MonoBehaviour {
 			col.GetComponent<PlanteCarnivore>().becomeAgressive();
 		}
 	}
+=======
+    //PARTIE SON
+
+    public void song(AudioClip song)
+    {
+        audio.PlayOneShot(song);
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        Debug.Log("COLLISION !!!!");
+        Debug.Log("TAG = " + col.gameObject.tag);
+
+        if(col.gameObject.tag == "Enemy")
+        {
+            touched = true;
+        }
+
+        
+    }
+
+    void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.tag == "ZonePlante")
+        {
+            col.GetComponent<PlanteCarnivore>().becomeAgressive();
+        }
+    }
+>>>>>>> ca9862e1b7bcf8602d8e87195f1876bcbf6a06d5
 
 }
