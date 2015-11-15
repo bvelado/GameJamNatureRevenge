@@ -32,8 +32,11 @@ public class Inventaire : MonoBehaviour {
             Debug.Log("Pas lancé");
             if (objet.GetComponent<Item>().Type == Item.ItemType.BocalLucioles)
             {
-                Debug.Log("Lancé");
-                objet.GetComponent<Item>().Throw();
+                if(objet.GetComponent<Item>().isAttachedToPlayer)
+                {
+                    objet.GetComponent<Item>().Throw();
+                }
+                
             }
         }
     }

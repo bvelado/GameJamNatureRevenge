@@ -28,7 +28,7 @@ public class Item : MonoBehaviour {
     // Vrai = Son renderer est désactivé
     bool isPickedUp = false;
 
-    bool isAttachedToPlayer = false;
+    public bool isAttachedToPlayer = false;
 
     void Start()
     {
@@ -73,9 +73,9 @@ public class Item : MonoBehaviour {
     {
         Debug.Log("Detach Lucioles");
         StartCoroutine(DetachBocalFromPlayer(15.0f));
-        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 600.0f + GameObject.Find("Player").transform.forward*600.0f);
-
-
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection*1200.0f);
+        GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
+        HUD.Instance.RemoveItemHUD(Type);
     }
 
     void OnTriggerEnter(Collider col)
@@ -116,6 +116,7 @@ public class Item : MonoBehaviour {
             hit.collider.gameObject.gameObject.SetActive(false);
             tryRespawn = true;
             gameObject.SetActive(false);
+            GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
             HUD.Instance.RemoveItemHUD(Type);
             yield return null;
         }
@@ -146,10 +147,12 @@ public class Item : MonoBehaviour {
             transform.FindChild("Model").gameObject.SetActive(true);
             transform.FindChild("Collider").gameObject.SetActive(true);
             transform.GetComponent<Rigidbody>().isKinematic = false;
+            transform.position = GameObject.Find("Player").transform.FindChild("ThrowPoint").position;
             isAttachedToPlayer = false;
 
             yield return new WaitForSeconds(seconds);
 
+            transform.FindChild("Collider").gameObject.SetActive(true);
             tryRespawn = true;
             gameObject.SetActive(false);
         }
