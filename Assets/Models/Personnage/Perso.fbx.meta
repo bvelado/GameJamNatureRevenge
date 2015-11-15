@@ -350,6 +350,415 @@ ModelImporter:
     100684: Spine2 3
     100686: Bandeau
     100688: Cheveux
+    100690: Branche avant bras droit
+    100692: Branche dos 1
+    100694: Branche dos 2
+    100696: Branche dos 3
+    100698: Branche dos 4
+    100700: Branche jambe droite
+    100702: Branche Jambe gauche 1
+    100704: Branche torse 1
+    100706: Branche torse 2
+    100708: Branche ventre
+    100710: Branche.004
+    100712: Branche.005
+    100714: BrancheJambeGauche2
+    100716: death1
+    100718: death2
+    100720: Head 4
+    100722: Head 5
+    100724: Head 6
+    100726: Head 7
+    100728: Head 8
+    100730: Head 9
+    100732: Head_end 4
+    100734: Head_end 5
+    100736: Head_end 6
+    100738: Head_end 7
+    100740: Head_end 8
+    100742: Head_end 9
+    100744: Hips 4
+    100746: Hips 5
+    100748: Hips 6
+    100750: Hips 7
+    100752: Hips 8
+    100754: Hips 9
+    100756: hit
+    100758: LeftArm 4
+    100760: LeftArm 5
+    100762: LeftArm 6
+    100764: LeftArm 7
+    100766: LeftArm 8
+    100768: LeftArm 9
+    100770: LeftFoot 4
+    100772: LeftFoot 5
+    100774: LeftFoot 6
+    100776: LeftFoot 7
+    100778: LeftFoot 8
+    100780: LeftFoot 9
+    100782: LeftForeArm 4
+    100784: LeftForeArm 5
+    100786: LeftForeArm 6
+    100788: LeftForeArm 7
+    100790: LeftForeArm 8
+    100792: LeftForeArm 9
+    100794: LeftHand 4
+    100796: LeftHand 5
+    100798: LeftHand 6
+    100800: LeftHand 7
+    100802: LeftHand 8
+    100804: LeftHand 9
+    100806: LeftHandIndex1 4
+    100808: LeftHandIndex1 5
+    100810: LeftHandIndex1 6
+    100812: LeftHandIndex1 7
+    100814: LeftHandIndex1 8
+    100816: LeftHandIndex1 9
+    100818: LeftHandIndex2 4
+    100820: LeftHandIndex2 5
+    100822: LeftHandIndex2 6
+    100824: LeftHandIndex2 7
+    100826: LeftHandIndex2 8
+    100828: LeftHandIndex2 9
+    100830: LeftHandIndex3 4
+    100832: LeftHandIndex3 5
+    100834: LeftHandIndex3 6
+    100836: LeftHandIndex3 7
+    100838: LeftHandIndex3 8
+    100840: LeftHandIndex3 9
+    100842: LeftHandIndex3_end 4
+    100844: LeftHandIndex3_end 5
+    100846: LeftHandIndex3_end 6
+    100848: LeftHandIndex3_end 7
+    100850: LeftHandIndex3_end 8
+    100852: LeftHandIndex3_end 9
+    100854: LeftHandMiddle1 4
+    100856: LeftHandMiddle1 5
+    100858: LeftHandMiddle1 6
+    100860: LeftHandMiddle1 7
+    100862: LeftHandMiddle1 8
+    100864: LeftHandMiddle1 9
+    100866: LeftHandMiddle2 4
+    100868: LeftHandMiddle2 5
+    100870: LeftHandMiddle2 6
+    100872: LeftHandMiddle2 7
+    100874: LeftHandMiddle2 8
+    100876: LeftHandMiddle2 9
+    100878: LeftHandMiddle3 4
+    100880: LeftHandMiddle3 5
+    100882: LeftHandMiddle3 6
+    100884: LeftHandMiddle3 7
+    100886: LeftHandMiddle3 8
+    100888: LeftHandMiddle3 9
+    100890: LeftHandMiddle3_end 4
+    100892: LeftHandMiddle3_end 5
+    100894: LeftHandMiddle3_end 6
+    100896: LeftHandMiddle3_end 7
+    100898: LeftHandMiddle3_end 8
+    100900: LeftHandMiddle3_end 9
+    100902: LeftHandPinky1 4
+    100904: LeftHandPinky1 5
+    100906: LeftHandPinky1 6
+    100908: LeftHandPinky1 7
+    100910: LeftHandPinky1 8
+    100912: LeftHandPinky1 9
+    100914: LeftHandPinky2 4
+    100916: LeftHandPinky2 5
+    100918: LeftHandPinky2 6
+    100920: LeftHandPinky2 7
+    100922: LeftHandPinky2 8
+    100924: LeftHandPinky2 9
+    100926: LeftHandPinky3 4
+    100928: LeftHandPinky3 5
+    100930: LeftHandPinky3 6
+    100932: LeftHandPinky3 7
+    100934: LeftHandPinky3 8
+    100936: LeftHandPinky3 9
+    100938: LeftHandPinky3_end 4
+    100940: LeftHandPinky3_end 5
+    100942: LeftHandPinky3_end 6
+    100944: LeftHandPinky3_end 7
+    100946: LeftHandPinky3_end 8
+    100948: LeftHandPinky3_end 9
+    100950: LeftHandRing1 4
+    100952: LeftHandRing1 5
+    100954: LeftHandRing1 6
+    100956: LeftHandRing1 7
+    100958: LeftHandRing1 8
+    100960: LeftHandRing1 9
+    100962: LeftHandRing2 4
+    100964: LeftHandRing2 5
+    100966: LeftHandRing2 6
+    100968: LeftHandRing2 7
+    100970: LeftHandRing2 8
+    100972: LeftHandRing2 9
+    100974: LeftHandRing3 4
+    100976: LeftHandRing3 5
+    100978: LeftHandRing3 6
+    100980: LeftHandRing3 7
+    100982: LeftHandRing3 8
+    100984: LeftHandRing3 9
+    100986: LeftHandRing3_end 4
+    100988: LeftHandRing3_end 5
+    100990: LeftHandRing3_end 6
+    100992: LeftHandRing3_end 7
+    100994: LeftHandRing3_end 8
+    100996: LeftHandRing3_end 9
+    100998: LeftHandThumb1 4
+    101000: LeftHandThumb1 5
+    101002: LeftHandThumb1 6
+    101004: LeftHandThumb1 7
+    101006: LeftHandThumb1 8
+    101008: LeftHandThumb1 9
+    101010: LeftHandThumb2 4
+    101012: LeftHandThumb2 5
+    101014: LeftHandThumb2 6
+    101016: LeftHandThumb2 7
+    101018: LeftHandThumb2 8
+    101020: LeftHandThumb2 9
+    101022: LeftHandThumb3 4
+    101024: LeftHandThumb3 5
+    101026: LeftHandThumb3 6
+    101028: LeftHandThumb3 7
+    101030: LeftHandThumb3 8
+    101032: LeftHandThumb3 9
+    101034: LeftHandThumb3_end 4
+    101036: LeftHandThumb3_end 5
+    101038: LeftHandThumb3_end 6
+    101040: LeftHandThumb3_end 7
+    101042: LeftHandThumb3_end 8
+    101044: LeftHandThumb3_end 9
+    101046: LeftLeg 10
+    101048: LeftLeg 5
+    101050: LeftLeg 6
+    101052: LeftLeg 7
+    101054: LeftLeg 8
+    101056: LeftLeg 9
+    101058: LeftShoulder 4
+    101060: LeftShoulder 5
+    101062: LeftShoulder 6
+    101064: LeftShoulder 7
+    101066: LeftShoulder 8
+    101068: LeftShoulder 9
+    101070: LeftToeBase 4
+    101072: LeftToeBase 5
+    101074: LeftToeBase 6
+    101076: LeftToeBase 7
+    101078: LeftToeBase 8
+    101080: LeftToeBase 9
+    101082: LeftToeBase_end 4
+    101084: LeftToeBase_end 5
+    101086: LeftToeBase_end 6
+    101088: LeftToeBase_end 7
+    101090: LeftToeBase_end 8
+    101092: LeftToeBase_end 9
+    101094: LeftUpLeg 10
+    101096: LeftUpLeg 5
+    101098: LeftUpLeg 6
+    101100: LeftUpLeg 7
+    101102: LeftUpLeg 8
+    101104: LeftUpLeg 9
+    101106: Neck 4
+    101108: Neck 5
+    101110: Neck 6
+    101112: Neck 7
+    101114: Neck 8
+    101116: Neck 9
+    101118: RightArm 4
+    101120: RightArm 5
+    101122: RightArm 6
+    101124: RightArm 7
+    101126: RightArm 8
+    101128: RightArm 9
+    101130: RightFoot 4
+    101132: RightFoot 5
+    101134: RightFoot 6
+    101136: RightFoot 7
+    101138: RightFoot 8
+    101140: RightFoot 9
+    101142: RightForeArm 4
+    101144: RightForeArm 5
+    101146: RightForeArm 6
+    101148: RightForeArm 7
+    101150: RightForeArm 8
+    101152: RightForeArm 9
+    101154: RightHand 4
+    101156: RightHand 5
+    101158: RightHand 6
+    101160: RightHand 7
+    101162: RightHand 8
+    101164: RightHand 9
+    101166: RightHandIndex1 4
+    101168: RightHandIndex1 5
+    101170: RightHandIndex1 6
+    101172: RightHandIndex1 7
+    101174: RightHandIndex1 8
+    101176: RightHandIndex1 9
+    101178: RightHandIndex2 4
+    101180: RightHandIndex2 5
+    101182: RightHandIndex2 6
+    101184: RightHandIndex2 7
+    101186: RightHandIndex2 8
+    101188: RightHandIndex2 9
+    101190: RightHandIndex3 4
+    101192: RightHandIndex3 5
+    101194: RightHandIndex3 6
+    101196: RightHandIndex3 7
+    101198: RightHandIndex3 8
+    101200: RightHandIndex3 9
+    101202: RightHandIndex3_end 4
+    101204: RightHandIndex3_end 5
+    101206: RightHandIndex3_end 6
+    101208: RightHandIndex3_end 7
+    101210: RightHandIndex3_end 8
+    101212: RightHandIndex3_end 9
+    101214: RightHandMiddle1 4
+    101216: RightHandMiddle1 5
+    101218: RightHandMiddle1 6
+    101220: RightHandMiddle1 7
+    101222: RightHandMiddle1 8
+    101224: RightHandMiddle1 9
+    101226: RightHandMiddle2 4
+    101228: RightHandMiddle2 5
+    101230: RightHandMiddle2 6
+    101232: RightHandMiddle2 7
+    101234: RightHandMiddle2 8
+    101236: RightHandMiddle2 9
+    101238: RightHandMiddle3 4
+    101240: RightHandMiddle3 5
+    101242: RightHandMiddle3 6
+    101244: RightHandMiddle3 7
+    101246: RightHandMiddle3 8
+    101248: RightHandMiddle3 9
+    101250: RightHandMiddle3_end 4
+    101252: RightHandMiddle3_end 5
+    101254: RightHandMiddle3_end 6
+    101256: RightHandMiddle3_end 7
+    101258: RightHandMiddle3_end 8
+    101260: RightHandMiddle3_end 9
+    101262: RightHandPinky1 4
+    101264: RightHandPinky1 5
+    101266: RightHandPinky1 6
+    101268: RightHandPinky1 7
+    101270: RightHandPinky1 8
+    101272: RightHandPinky1 9
+    101274: RightHandPinky2 4
+    101276: RightHandPinky2 5
+    101278: RightHandPinky2 6
+    101280: RightHandPinky2 7
+    101282: RightHandPinky2 8
+    101284: RightHandPinky2 9
+    101286: RightHandPinky3 4
+    101288: RightHandPinky3 5
+    101290: RightHandPinky3 6
+    101292: RightHandPinky3 7
+    101294: RightHandPinky3 8
+    101296: RightHandPinky3 9
+    101298: RightHandPinky3_end 4
+    101300: RightHandPinky3_end 5
+    101302: RightHandPinky3_end 6
+    101304: RightHandPinky3_end 7
+    101306: RightHandPinky3_end 8
+    101308: RightHandPinky3_end 9
+    101310: RightHandRing1 4
+    101312: RightHandRing1 5
+    101314: RightHandRing1 6
+    101316: RightHandRing1 7
+    101318: RightHandRing1 8
+    101320: RightHandRing1 9
+    101322: RightHandRing2 4
+    101324: RightHandRing2 5
+    101326: RightHandRing2 6
+    101328: RightHandRing2 7
+    101330: RightHandRing2 8
+    101332: RightHandRing2 9
+    101334: RightHandRing3 4
+    101336: RightHandRing3 5
+    101338: RightHandRing3 6
+    101340: RightHandRing3 7
+    101342: RightHandRing3 8
+    101344: RightHandRing3 9
+    101346: RightHandRing3_end 4
+    101348: RightHandRing3_end 5
+    101350: RightHandRing3_end 6
+    101352: RightHandRing3_end 7
+    101354: RightHandRing3_end 8
+    101356: RightHandRing3_end 9
+    101358: RightHandThumb1 4
+    101360: RightHandThumb1 5
+    101362: RightHandThumb1 6
+    101364: RightHandThumb1 7
+    101366: RightHandThumb1 8
+    101368: RightHandThumb1 9
+    101370: RightHandThumb2 4
+    101372: RightHandThumb2 5
+    101374: RightHandThumb2 6
+    101376: RightHandThumb2 7
+    101378: RightHandThumb2 8
+    101380: RightHandThumb2 9
+    101382: RightHandThumb3 4
+    101384: RightHandThumb3 5
+    101386: RightHandThumb3 6
+    101388: RightHandThumb3 7
+    101390: RightHandThumb3 8
+    101392: RightHandThumb3 9
+    101394: RightHandThumb3_end 4
+    101396: RightHandThumb3_end 5
+    101398: RightHandThumb3_end 6
+    101400: RightHandThumb3_end 7
+    101402: RightHandThumb3_end 8
+    101404: RightHandThumb3_end 9
+    101406: RightLeg 10
+    101408: RightLeg 5
+    101410: RightLeg 6
+    101412: RightLeg 7
+    101414: RightLeg 8
+    101416: RightLeg 9
+    101418: RightShoulder 4
+    101420: RightShoulder 5
+    101422: RightShoulder 6
+    101424: RightShoulder 7
+    101426: RightShoulder 8
+    101428: RightShoulder 9
+    101430: RightToeBase 4
+    101432: RightToeBase 5
+    101434: RightToeBase 6
+    101436: RightToeBase 7
+    101438: RightToeBase 8
+    101440: RightToeBase 9
+    101442: RightToeBase_end 4
+    101444: RightToeBase_end 5
+    101446: RightToeBase_end 6
+    101448: RightToeBase_end 7
+    101450: RightToeBase_end 8
+    101452: RightToeBase_end 9
+    101454: RightUpLeg 10
+    101456: RightUpLeg 5
+    101458: RightUpLeg 6
+    101460: RightUpLeg 7
+    101462: RightUpLeg 8
+    101464: RightUpLeg 9
+    101466: Spine 4
+    101468: Spine 5
+    101470: Spine 6
+    101472: Spine 7
+    101474: Spine 8
+    101476: Spine 9
+    101478: Spine1 4
+    101480: Spine1 5
+    101482: Spine1 6
+    101484: Spine1 7
+    101486: Spine1 8
+    101488: Spine1 9
+    101490: Spine2 4
+    101492: Spine2 5
+    101494: Spine2 6
+    101496: Spine2 7
+    101498: Spine2 8
+    101500: Spine2 9
+    101502: throw
+    101504: trebucher
+    101506: UseItem
     400000: Annulaire droit
     400002: Annulaire droit.001
     400004: Annulaire droit.002
@@ -695,12 +1104,434 @@ ModelImporter:
     400684: Spine2 3
     400686: Bandeau
     400688: Cheveux
+    400690: Branche avant bras droit
+    400692: Branche dos 1
+    400694: Branche dos 2
+    400696: Branche dos 3
+    400698: Branche dos 4
+    400700: Branche jambe droite
+    400702: Branche Jambe gauche 1
+    400704: Branche torse 1
+    400706: Branche torse 2
+    400708: Branche ventre
+    400710: Branche.004
+    400712: Branche.005
+    400714: BrancheJambeGauche2
+    400716: death1
+    400718: death2
+    400720: Head 4
+    400722: Head 5
+    400724: Head 6
+    400726: Head 7
+    400728: Head 8
+    400730: Head 9
+    400732: Head_end 4
+    400734: Head_end 5
+    400736: Head_end 6
+    400738: Head_end 7
+    400740: Head_end 8
+    400742: Head_end 9
+    400744: Hips 4
+    400746: Hips 5
+    400748: Hips 6
+    400750: Hips 7
+    400752: Hips 8
+    400754: Hips 9
+    400756: hit
+    400758: LeftArm 4
+    400760: LeftArm 5
+    400762: LeftArm 6
+    400764: LeftArm 7
+    400766: LeftArm 8
+    400768: LeftArm 9
+    400770: LeftFoot 4
+    400772: LeftFoot 5
+    400774: LeftFoot 6
+    400776: LeftFoot 7
+    400778: LeftFoot 8
+    400780: LeftFoot 9
+    400782: LeftForeArm 4
+    400784: LeftForeArm 5
+    400786: LeftForeArm 6
+    400788: LeftForeArm 7
+    400790: LeftForeArm 8
+    400792: LeftForeArm 9
+    400794: LeftHand 4
+    400796: LeftHand 5
+    400798: LeftHand 6
+    400800: LeftHand 7
+    400802: LeftHand 8
+    400804: LeftHand 9
+    400806: LeftHandIndex1 4
+    400808: LeftHandIndex1 5
+    400810: LeftHandIndex1 6
+    400812: LeftHandIndex1 7
+    400814: LeftHandIndex1 8
+    400816: LeftHandIndex1 9
+    400818: LeftHandIndex2 4
+    400820: LeftHandIndex2 5
+    400822: LeftHandIndex2 6
+    400824: LeftHandIndex2 7
+    400826: LeftHandIndex2 8
+    400828: LeftHandIndex2 9
+    400830: LeftHandIndex3 4
+    400832: LeftHandIndex3 5
+    400834: LeftHandIndex3 6
+    400836: LeftHandIndex3 7
+    400838: LeftHandIndex3 8
+    400840: LeftHandIndex3 9
+    400842: LeftHandIndex3_end 4
+    400844: LeftHandIndex3_end 5
+    400846: LeftHandIndex3_end 6
+    400848: LeftHandIndex3_end 7
+    400850: LeftHandIndex3_end 8
+    400852: LeftHandIndex3_end 9
+    400854: LeftHandMiddle1 4
+    400856: LeftHandMiddle1 5
+    400858: LeftHandMiddle1 6
+    400860: LeftHandMiddle1 7
+    400862: LeftHandMiddle1 8
+    400864: LeftHandMiddle1 9
+    400866: LeftHandMiddle2 4
+    400868: LeftHandMiddle2 5
+    400870: LeftHandMiddle2 6
+    400872: LeftHandMiddle2 7
+    400874: LeftHandMiddle2 8
+    400876: LeftHandMiddle2 9
+    400878: LeftHandMiddle3 4
+    400880: LeftHandMiddle3 5
+    400882: LeftHandMiddle3 6
+    400884: LeftHandMiddle3 7
+    400886: LeftHandMiddle3 8
+    400888: LeftHandMiddle3 9
+    400890: LeftHandMiddle3_end 4
+    400892: LeftHandMiddle3_end 5
+    400894: LeftHandMiddle3_end 6
+    400896: LeftHandMiddle3_end 7
+    400898: LeftHandMiddle3_end 8
+    400900: LeftHandMiddle3_end 9
+    400902: LeftHandPinky1 4
+    400904: LeftHandPinky1 5
+    400906: LeftHandPinky1 6
+    400908: LeftHandPinky1 7
+    400910: LeftHandPinky1 8
+    400912: LeftHandPinky1 9
+    400914: LeftHandPinky2 4
+    400916: LeftHandPinky2 5
+    400918: LeftHandPinky2 6
+    400920: LeftHandPinky2 7
+    400922: LeftHandPinky2 8
+    400924: LeftHandPinky2 9
+    400926: LeftHandPinky3 4
+    400928: LeftHandPinky3 5
+    400930: LeftHandPinky3 6
+    400932: LeftHandPinky3 7
+    400934: LeftHandPinky3 8
+    400936: LeftHandPinky3 9
+    400938: LeftHandPinky3_end 4
+    400940: LeftHandPinky3_end 5
+    400942: LeftHandPinky3_end 6
+    400944: LeftHandPinky3_end 7
+    400946: LeftHandPinky3_end 8
+    400948: LeftHandPinky3_end 9
+    400950: LeftHandRing1 4
+    400952: LeftHandRing1 5
+    400954: LeftHandRing1 6
+    400956: LeftHandRing1 7
+    400958: LeftHandRing1 8
+    400960: LeftHandRing1 9
+    400962: LeftHandRing2 4
+    400964: LeftHandRing2 5
+    400966: LeftHandRing2 6
+    400968: LeftHandRing2 7
+    400970: LeftHandRing2 8
+    400972: LeftHandRing2 9
+    400974: LeftHandRing3 4
+    400976: LeftHandRing3 5
+    400978: LeftHandRing3 6
+    400980: LeftHandRing3 7
+    400982: LeftHandRing3 8
+    400984: LeftHandRing3 9
+    400986: LeftHandRing3_end 4
+    400988: LeftHandRing3_end 5
+    400990: LeftHandRing3_end 6
+    400992: LeftHandRing3_end 7
+    400994: LeftHandRing3_end 8
+    400996: LeftHandRing3_end 9
+    400998: LeftHandThumb1 4
+    401000: LeftHandThumb1 5
+    401002: LeftHandThumb1 6
+    401004: LeftHandThumb1 7
+    401006: LeftHandThumb1 8
+    401008: LeftHandThumb1 9
+    401010: LeftHandThumb2 4
+    401012: LeftHandThumb2 5
+    401014: LeftHandThumb2 6
+    401016: LeftHandThumb2 7
+    401018: LeftHandThumb2 8
+    401020: LeftHandThumb2 9
+    401022: LeftHandThumb3 4
+    401024: LeftHandThumb3 5
+    401026: LeftHandThumb3 6
+    401028: LeftHandThumb3 7
+    401030: LeftHandThumb3 8
+    401032: LeftHandThumb3 9
+    401034: LeftHandThumb3_end 4
+    401036: LeftHandThumb3_end 5
+    401038: LeftHandThumb3_end 6
+    401040: LeftHandThumb3_end 7
+    401042: LeftHandThumb3_end 8
+    401044: LeftHandThumb3_end 9
+    401046: LeftLeg 10
+    401048: LeftLeg 5
+    401050: LeftLeg 6
+    401052: LeftLeg 7
+    401054: LeftLeg 8
+    401056: LeftLeg 9
+    401058: LeftShoulder 4
+    401060: LeftShoulder 5
+    401062: LeftShoulder 6
+    401064: LeftShoulder 7
+    401066: LeftShoulder 8
+    401068: LeftShoulder 9
+    401070: LeftToeBase 4
+    401072: LeftToeBase 5
+    401074: LeftToeBase 6
+    401076: LeftToeBase 7
+    401078: LeftToeBase 8
+    401080: LeftToeBase 9
+    401082: LeftToeBase_end 4
+    401084: LeftToeBase_end 5
+    401086: LeftToeBase_end 6
+    401088: LeftToeBase_end 7
+    401090: LeftToeBase_end 8
+    401092: LeftToeBase_end 9
+    401094: LeftUpLeg 10
+    401096: LeftUpLeg 5
+    401098: LeftUpLeg 6
+    401100: LeftUpLeg 7
+    401102: LeftUpLeg 8
+    401104: LeftUpLeg 9
+    401106: Neck 4
+    401108: Neck 5
+    401110: Neck 6
+    401112: Neck 7
+    401114: Neck 8
+    401116: Neck 9
+    401118: RightArm 4
+    401120: RightArm 5
+    401122: RightArm 6
+    401124: RightArm 7
+    401126: RightArm 8
+    401128: RightArm 9
+    401130: RightFoot 4
+    401132: RightFoot 5
+    401134: RightFoot 6
+    401136: RightFoot 7
+    401138: RightFoot 8
+    401140: RightFoot 9
+    401142: RightForeArm 4
+    401144: RightForeArm 5
+    401146: RightForeArm 6
+    401148: RightForeArm 7
+    401150: RightForeArm 8
+    401152: RightForeArm 9
+    401154: RightHand 4
+    401156: RightHand 5
+    401158: RightHand 6
+    401160: RightHand 7
+    401162: RightHand 8
+    401164: RightHand 9
+    401166: RightHandIndex1 4
+    401168: RightHandIndex1 5
+    401170: RightHandIndex1 6
+    401172: RightHandIndex1 7
+    401174: RightHandIndex1 8
+    401176: RightHandIndex1 9
+    401178: RightHandIndex2 4
+    401180: RightHandIndex2 5
+    401182: RightHandIndex2 6
+    401184: RightHandIndex2 7
+    401186: RightHandIndex2 8
+    401188: RightHandIndex2 9
+    401190: RightHandIndex3 4
+    401192: RightHandIndex3 5
+    401194: RightHandIndex3 6
+    401196: RightHandIndex3 7
+    401198: RightHandIndex3 8
+    401200: RightHandIndex3 9
+    401202: RightHandIndex3_end 4
+    401204: RightHandIndex3_end 5
+    401206: RightHandIndex3_end 6
+    401208: RightHandIndex3_end 7
+    401210: RightHandIndex3_end 8
+    401212: RightHandIndex3_end 9
+    401214: RightHandMiddle1 4
+    401216: RightHandMiddle1 5
+    401218: RightHandMiddle1 6
+    401220: RightHandMiddle1 7
+    401222: RightHandMiddle1 8
+    401224: RightHandMiddle1 9
+    401226: RightHandMiddle2 4
+    401228: RightHandMiddle2 5
+    401230: RightHandMiddle2 6
+    401232: RightHandMiddle2 7
+    401234: RightHandMiddle2 8
+    401236: RightHandMiddle2 9
+    401238: RightHandMiddle3 4
+    401240: RightHandMiddle3 5
+    401242: RightHandMiddle3 6
+    401244: RightHandMiddle3 7
+    401246: RightHandMiddle3 8
+    401248: RightHandMiddle3 9
+    401250: RightHandMiddle3_end 4
+    401252: RightHandMiddle3_end 5
+    401254: RightHandMiddle3_end 6
+    401256: RightHandMiddle3_end 7
+    401258: RightHandMiddle3_end 8
+    401260: RightHandMiddle3_end 9
+    401262: RightHandPinky1 4
+    401264: RightHandPinky1 5
+    401266: RightHandPinky1 6
+    401268: RightHandPinky1 7
+    401270: RightHandPinky1 8
+    401272: RightHandPinky1 9
+    401274: RightHandPinky2 4
+    401276: RightHandPinky2 5
+    401278: RightHandPinky2 6
+    401280: RightHandPinky2 7
+    401282: RightHandPinky2 8
+    401284: RightHandPinky2 9
+    401286: RightHandPinky3 4
+    401288: RightHandPinky3 5
+    401290: RightHandPinky3 6
+    401292: RightHandPinky3 7
+    401294: RightHandPinky3 8
+    401296: RightHandPinky3 9
+    401298: RightHandPinky3_end 4
+    401300: RightHandPinky3_end 5
+    401302: RightHandPinky3_end 6
+    401304: RightHandPinky3_end 7
+    401306: RightHandPinky3_end 8
+    401308: RightHandPinky3_end 9
+    401310: RightHandRing1 4
+    401312: RightHandRing1 5
+    401314: RightHandRing1 6
+    401316: RightHandRing1 7
+    401318: RightHandRing1 8
+    401320: RightHandRing1 9
+    401322: RightHandRing2 4
+    401324: RightHandRing2 5
+    401326: RightHandRing2 6
+    401328: RightHandRing2 7
+    401330: RightHandRing2 8
+    401332: RightHandRing2 9
+    401334: RightHandRing3 4
+    401336: RightHandRing3 5
+    401338: RightHandRing3 6
+    401340: RightHandRing3 7
+    401342: RightHandRing3 8
+    401344: RightHandRing3 9
+    401346: RightHandRing3_end 4
+    401348: RightHandRing3_end 5
+    401350: RightHandRing3_end 6
+    401352: RightHandRing3_end 7
+    401354: RightHandRing3_end 8
+    401356: RightHandRing3_end 9
+    401358: RightHandThumb1 4
+    401360: RightHandThumb1 5
+    401362: RightHandThumb1 6
+    401364: RightHandThumb1 7
+    401366: RightHandThumb1 8
+    401368: RightHandThumb1 9
+    401370: RightHandThumb2 4
+    401372: RightHandThumb2 5
+    401374: RightHandThumb2 6
+    401376: RightHandThumb2 7
+    401378: RightHandThumb2 8
+    401380: RightHandThumb2 9
+    401382: RightHandThumb3 4
+    401384: RightHandThumb3 5
+    401386: RightHandThumb3 6
+    401388: RightHandThumb3 7
+    401390: RightHandThumb3 8
+    401392: RightHandThumb3 9
+    401394: RightHandThumb3_end 4
+    401396: RightHandThumb3_end 5
+    401398: RightHandThumb3_end 6
+    401400: RightHandThumb3_end 7
+    401402: RightHandThumb3_end 8
+    401404: RightHandThumb3_end 9
+    401406: RightLeg 10
+    401408: RightLeg 5
+    401410: RightLeg 6
+    401412: RightLeg 7
+    401414: RightLeg 8
+    401416: RightLeg 9
+    401418: RightShoulder 4
+    401420: RightShoulder 5
+    401422: RightShoulder 6
+    401424: RightShoulder 7
+    401426: RightShoulder 8
+    401428: RightShoulder 9
+    401430: RightToeBase 4
+    401432: RightToeBase 5
+    401434: RightToeBase 6
+    401436: RightToeBase 7
+    401438: RightToeBase 8
+    401440: RightToeBase 9
+    401442: RightToeBase_end 4
+    401444: RightToeBase_end 5
+    401446: RightToeBase_end 6
+    401448: RightToeBase_end 7
+    401450: RightToeBase_end 8
+    401452: RightToeBase_end 9
+    401454: RightUpLeg 10
+    401456: RightUpLeg 5
+    401458: RightUpLeg 6
+    401460: RightUpLeg 7
+    401462: RightUpLeg 8
+    401464: RightUpLeg 9
+    401466: Spine 4
+    401468: Spine 5
+    401470: Spine 6
+    401472: Spine 7
+    401474: Spine 8
+    401476: Spine 9
+    401478: Spine1 4
+    401480: Spine1 5
+    401482: Spine1 6
+    401484: Spine1 7
+    401486: Spine1 8
+    401488: Spine1 9
+    401490: Spine2 4
+    401492: Spine2 5
+    401494: Spine2 6
+    401496: Spine2 7
+    401498: Spine2 8
+    401500: Spine2 9
+    401502: throw
+    401504: trebucher
+    401506: UseItem
     2300000: Cheveux
     3300000: Cheveux
     4300000: Sphere
     4300002: Basemesh_FullbodyMale
     4300004: Cheveux
     4300006: Bandeau
+    4300008: BrancheJambeGauche2
+    4300010: Branche jambe droite
+    4300012: Branche Jambe gauche 1
+    4300014: Branche avant bras droit
+    4300016: Branche.004
+    4300018: Branche dos 2
+    4300020: Branche dos 4
+    4300022: Branche dos 1
+    4300024: Branche dos 3
+    4300026: Branche.005
+    4300028: Branche ventre
+    4300030: Branche torse 2
+    4300032: Branche torse 1
     7400000: Iddle
     7400002: Walk
     7400004: Walk|Iddle
@@ -722,6 +1553,19 @@ ModelImporter:
     13700002: Sphere
     13700004: Bandeau
     13700006: Cheveux
+    13700008: Branche avant bras droit
+    13700010: Branche dos 1
+    13700012: Branche dos 2
+    13700014: Branche dos 3
+    13700016: Branche dos 4
+    13700018: Branche jambe droite
+    13700020: Branche Jambe gauche 1
+    13700022: Branche torse 1
+    13700024: Branche torse 2
+    13700026: Branche ventre
+    13700028: Branche.004
+    13700030: Branche.005
+    13700032: BrancheJambeGauche2
   materials:
     importMaterials: 1
     materialName: 0
