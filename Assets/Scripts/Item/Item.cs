@@ -38,6 +38,11 @@ public class Item : MonoBehaviour {
 					Debug.Log ("Vous pouvez utiliser l'objet");
 				} else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
                     Debug.Log("Ouverture du portail");
+                    player.GetComponent<Character>().startUsingItem();
+                   
+                    //IL FAUUDRAIT ATTENDR UN MOMENT AVANT L'OUVERTURE DU PORTAIL
+
+                    hit.transform.parent.parent.GetComponent<Animation>().Play();                    
                     hit.collider.gameObject.SetActive(false);
                     tryRespawn = true;
                     gameObject.SetActive(false);

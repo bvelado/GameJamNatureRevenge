@@ -9,7 +9,9 @@ public class Character : MonoBehaviour {
 	private float horizMove;
 	private float vertMove;
 	private RaycastHit hit;
+
     private bool picking;
+    private bool usingItem;
 
 	private float speed;
 	private float course;
@@ -37,9 +39,13 @@ public class Character : MonoBehaviour {
        
         if(picking)
         {
-            Debug.Log("PICKING 2");
-
             this.transform.GetComponent<Animation>().CrossFade("Pick");
+        }
+
+        if(usingItem)
+        {
+            Debug.Log("DOIT LANCER L'ANIMATION DE USEITEM");
+            this.transform.GetComponent<Animation>().CrossFade("UseItem");
         }
 
 		if (moveDirection != Vector3.zero && !picking) {
@@ -49,7 +55,7 @@ public class Character : MonoBehaviour {
 			moveDirection.y -= 0.2f * 3;
 			controller.Move (moveDirection * 0.3f * speed * course);
 			transform.FindChild ("Armature").FindChild ("Base").rotation = Quaternion.LookRotation (lastMoveDirection);
-		} else if(!picking) {
+		} else if(!picking && !usingItem) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
@@ -87,6 +93,17 @@ public class Character : MonoBehaviour {
         return this.picking;
     }
 
+    public void startUsingItem()
+    {
+        Debug.Log("USEITEM");
+        this.usingItem = true;
+    }
+
+    public void endUsingItem()
+    {
+        Debug.Log("STOPITEM");
+        this.usingItem = false;
+    }
 		
     public void Heal()
     {

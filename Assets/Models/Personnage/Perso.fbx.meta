@@ -710,6 +710,12 @@ ModelImporter:
     7400012: Walk
     7400014: Run
     7400016: Pick
+    7400018: hit
+    7400020: trebucher
+    7400022: UseItem
+    7400024: throw
+    7400026: death1
+    7400028: death2
     9500000: //RootNode
     11100000: //RootNode
     13700000: Basemesh_FullbodyMale
@@ -3497,6 +3503,2166 @@ ModelImporter:
       - path: Walk/Hips 3/Spine 3/Spine1 3/Spine2 3/RightShoulder 3/RightArm 3/RightForeArm
           3/RightHand 3/RightHandThumb1 3/RightHandThumb2 3/RightHandThumb3 3/RightHandThumb3_end
           3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hit
+      takeName: hit
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: trebucher
+      takeName: trebucher
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: UseItem
+      takeName: UseItem
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: throw
+      takeName: throw
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: death1
+      takeName: death1
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: death2
+      takeName: death2
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/LeftUpLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche
+        weight: 1
+      - path: Armature/Base/LeftUpLeg/LeftLeg/Cheville gauche/Pied gauche/Pied gauche_end
+        weight: 1
+      - path: Armature/Base/RightUpLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit
+        weight: 1
+      - path: Armature/Base/RightUpLeg/RightLeg/Cheville Droite/Pied Droit/Pied Droit_end
+        weight: 1
+      - path: Armature/Base/Ventre
+        weight: 1
+      - path: Armature/Base/Ventre/Torse
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange  droite
+          3/Majeur droit/Majeur droit.001/Majeur droit.002/Majeur droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1
+        weight: 1
+      - path: 'Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit '
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 1/Pouce droit /Pouce droit .001/Pouce droit .001_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 2/Index droit/Index droit.001/Index droit.002/Index droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 4/Annulaire droit/Annulaire droit.001/Annulaire droit.002/Annulaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras droit/Avant bras droit/Main droite/Phalange
+          droite 5/Auriculaire droit/Auriculaire droit.001/Auriculaire droit.002/Auriculaire
+          droit.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalage
+          gauche 3/Majeur gauche/Majeur gauche.001/Majeur gauche.002/Majeur gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalang
+          gauche 5/Auriculaire gauche/Auriculaire gauche.001/Auriculaire gauche.002/Auriculaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 1/Pouce gauche 1/Pouche gauche 2/Pouche gauche 2_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 2/Index gauche/Index gauche.001/Index gauche.002/Index gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Bras gauche/Avant bras gauche/Main gauche/Phalange
+          gauche 4/Annulaire gauche/Annulaire gauche.001/Annulaire gauche.002/Annulaire
+          gauche.002_end
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete
+        weight: 1
+      - path: Armature/Base/Ventre/Torse/Cou/Tete/Tete_end
+        weight: 1
+      - path: Bandeau
+        weight: 1
+      - path: Basemesh_FullbodyMale
+        weight: 1
+      - path: Cheveux
+        weight: 1
+      - path: Iddle
+        weight: 1
+      - path: Iddle/Hips
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Iddle/Hips/LeftUpLeg 1/LeftLeg 1/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase
+        weight: 1
+      - path: Iddle/Hips/RightUpLeg 1/RightLeg 1/RightFoot/RightToeBase/RightToeBase_end
+        weight: 1
+      - path: Iddle/Hips/Spine
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/Neck/Head/Head_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing3_end
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3
+        weight: 1
+      - path: Iddle/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb3_end
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
