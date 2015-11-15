@@ -143,10 +143,7 @@ public class Character : MonoBehaviour {
 
         if(dying)
         {
-            this.transform.GetComponent<Animation>().CrossFade("death2");
-			HUD.Instance.showDeathMessage();
-
-			Application.LoadLevel("Level1");
+			StartCoroutine(Mort ());
         }
 
 		if (moveDirection != Vector3.zero && !picking) {
@@ -249,5 +246,12 @@ public class Character : MonoBehaviour {
             _hp -= hp*5;
         }
     }
+
+	IEnumerator Mort(){
+		this.transform.GetComponent<Animation>().CrossFade("death2");
+		HUD.Instance.showDeathMessage();
+		yield return new WaitForSeconds (4.0f);
+		Application.LoadLevel("Level1");
+	}
 
 }
