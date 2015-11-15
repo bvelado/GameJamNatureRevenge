@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: fa725d9bf6dbef943a869ec278cfdba8
+timeCreated: 1447600077
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Box001
+    100024: Box002
+    100026: Box003
+    100028: Box004
+    100030: Box005
+    100032: Box006
+    100034: Box007
+    100036: Box008
+    100038: Cone001
+    100040: Cone002
+    100042: Cone003
+    100044: Cone004
+    100046: Dummy001
+    100048: Dummy002
+    100050: Dummy003
+    100052: Dummy004
+    100054: IK Chain001
+    100056: //RootNode
+    100058: Sphere001
+    100060: Sphere002
+    100062: Tourelle_fleur
+    100064: Tourelle_tige
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Box001
+    400024: Box002
+    400026: Box003
+    400028: Box004
+    400030: Box005
+    400032: Box006
+    400034: Box007
+    400036: Box008
+    400038: Cone001
+    400040: Cone002
+    400042: Cone003
+    400044: Cone004
+    400046: Dummy001
+    400048: Dummy002
+    400050: Dummy003
+    400052: Dummy004
+    400054: IK Chain001
+    400056: //RootNode
+    400058: Sphere001
+    400060: Sphere002
+    400062: Tourelle_fleur
+    400064: Tourelle_tige
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box004
+    2300008: Box005
+    2300010: Box006
+    2300012: Box007
+    2300014: Box008
+    2300016: Cone001
+    2300018: Cone002
+    2300020: Cone003
+    2300022: Cone004
+    2300024: Sphere001
+    2300026: Sphere002
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box004
+    3300008: Box005
+    3300010: Box006
+    3300012: Box007
+    3300014: Box008
+    3300016: Cone001
+    3300018: Cone002
+    3300020: Cone003
+    3300022: Cone004
+    3300024: Sphere001
+    3300026: Sphere002
+    4300000: Tourelle_tige
+    4300002: Box007
+    4300004: Box008
+    4300006: Box004
+    4300008: Box003
+    4300010: Box002
+    4300012: Box001
+    4300014: Box006
+    4300016: Tourelle_fleur
+    4300018: Cone003
+    4300020: Cone004
+    4300022: Cone002
+    4300024: Cone001
+    4300026: Sphere002
+    4300028: Sphere001
+    4300030: Box005
+    7400000: Detect
+    7400002: Attack
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Tourelle_fleur
+    13700002: Tourelle_tige
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Detect
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Bone001
+        weight: 1
+      - path: Dummy001/Bone001/Bone002
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Bone006
+        weight: 1
+      - path: Dummy002/Bone006/Bone007
+        weight: 1
+      - path: Dummy002/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Dummy002/Bone006/Bone007/Bone008/Dummy003
+        weight: 1
+      - path: Dummy002/Bone006/Bone009
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Bone011
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Bone011/Dummy004
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone001
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone002
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone003
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone004
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Tourelle_fleur
+        weight: 1
+      - path: Dummy002/Box001
+        weight: 1
+      - path: Dummy002/Box002
+        weight: 1
+      - path: Dummy002/Box003
+        weight: 1
+      - path: Dummy002/Box004
+        weight: 1
+      - path: Dummy002/Box005
+        weight: 1
+      - path: Dummy002/Box006
+        weight: 1
+      - path: Dummy002/Box007
+        weight: 1
+      - path: Dummy002/Box008
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy002/Sphere002
+        weight: 1
+      - path: Dummy002/Sphere002/Sphere001
+        weight: 1
+      - path: Tourelle_tige
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 55
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Bone001
+        weight: 1
+      - path: Dummy001/Bone001/Bone002
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Dummy001/Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Bone006
+        weight: 1
+      - path: Dummy002/Bone006/Bone007
+        weight: 1
+      - path: Dummy002/Bone006/Bone007/Bone008
+        weight: 1
+      - path: Dummy002/Bone006/Bone007/Bone008/Dummy003
+        weight: 1
+      - path: Dummy002/Bone006/Bone009
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Bone011
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Bone011/Dummy004
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone001
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone002
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone003
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Bone010/Cone004
+        weight: 1
+      - path: Dummy002/Bone006/Bone009/Tourelle_fleur
+        weight: 1
+      - path: Dummy002/Box001
+        weight: 1
+      - path: Dummy002/Box002
+        weight: 1
+      - path: Dummy002/Box003
+        weight: 1
+      - path: Dummy002/Box004
+        weight: 1
+      - path: Dummy002/Box005
+        weight: 1
+      - path: Dummy002/Box006
+        weight: 1
+      - path: Dummy002/Box007
+        weight: 1
+      - path: Dummy002/Box008
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy002/Sphere002
+        weight: 1
+      - path: Dummy002/Sphere002/Sphere001
+        weight: 1
+      - path: Tourelle_tige
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
