@@ -13,6 +13,7 @@ public class LightComportement : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Musique2").GetComponent<AudioSource>().Play();
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<AudioSource>().Stop();
             }
+            col.GetComponent<Character>().isLighting = true;
         }
     }
 
@@ -20,6 +21,7 @@ public class LightComportement : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            col.GetComponent<Character>().isLighting = false;
             if (GameObject.FindGameObjectWithTag("Musique2").GetComponent<AudioSource>().isPlaying)
             {
                 GameObject.FindGameObjectWithTag("GameController").GetComponent<AudioSource>().Play();
