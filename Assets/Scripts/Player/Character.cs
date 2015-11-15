@@ -19,6 +19,7 @@ public class Character : MonoBehaviour {
 	private float course;
 
     public int _maxHp, _maxLives;
+    [HideInInspector]
     public int _hp, _lives;
 	
 	// Use this for initialization

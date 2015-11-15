@@ -43,10 +43,9 @@ public class HUD : MonoBehaviour {
     
     public void InitHP(int maxHp)
     {
+        Debug.Log(maxHp);
         hpSlider.maxValue = maxHp;
         hpSlider.value = maxHp;
-
-        Debug.Log(hpSlider.maxValue);
     }
 
     public void InitLives()
