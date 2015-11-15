@@ -55,18 +55,19 @@ public class Character : MonoBehaviour {
                 if (_hp < 1)
                 {
                     _lives--;
+                    HUD.Instance.DecreaseLive();
                     if (_lives > -1)
                     {
                         // Perd 1 vie
                         _hp = _maxHp;
+                        _lives--;
+                        
                     }
                 }
             }
-            //Debug.Log(_hp);
+            HUD.Instance.UpdateHP(_hp);
             yield return new WaitForSeconds(0.5f);
         }
-        HUD.Instance.InitHP(_maxHp);
-        HUD.Instance.InitLives();
 	}
 	
 	// Update is called once per frame
