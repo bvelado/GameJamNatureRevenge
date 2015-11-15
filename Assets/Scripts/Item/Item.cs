@@ -39,17 +39,18 @@ public class Item : MonoBehaviour {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (Physics.Raycast (player.transform.position, player.transform.forward, out hit, 9f)) {
 			if (hit.distance<10){
-                if ((hit.collider.tag=="Lucioles") && (Type == ItemType.Bocal)){
+                if ((hit.collider.tag=="PlanteCraintive") && (Type == ItemType.Bocal)){
 					Debug.Log ("Vous pouvez utiliser l'objet");
                     HUD.Instance.RemoveItemHUD(Type);
                 } else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
 
-                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent));
-
-                    
-                }
+                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
+				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
+					Debug.Log("Ca brule");
+					player.GetComponent<Character>().startUsingItem();
+				}
 			}
 		}
     }

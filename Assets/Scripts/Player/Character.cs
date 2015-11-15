@@ -31,7 +31,37 @@ public class Character : MonoBehaviour {
 		speed = 1.0f;
 		course = 1.0f;
         picking = false;
+        isLighting = true;
+        StartCoroutine(refreshHeal());
+    }
 
+    
+
+    IEnumerator refreshHeal()
+    {
+        while (_lives > -1)
+        {
+            if (isLighting)
+            {
+                if (_hp < _maxHp)
+                _hp++;
+            }
+            else
+            {
+                _hp--;
+                if (_hp < 1)
+                {
+                    _lives--;
+                    if (_lives > -1)
+                    {
+                        // Perd 1 vie
+                        _hp = _maxHp;
+                    }
+                }
+            }
+            //Debug.Log(_hp);
+            yield return new WaitForSeconds(0.5f);
+        }
         HUD.Instance.InitHP(_maxHp);
         HUD.Instance.InitLives();
 	}
