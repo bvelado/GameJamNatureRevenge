@@ -22,7 +22,11 @@ public class Item : MonoBehaviour {
 	private RaycastHit hit;
 	private GameObject player;
 
+    // Vrai = essaye de repop si inactif
     bool tryRespawn = false;
+    // Vrai = Est dans l'inventaire du joueur et ne peut pas être ramassé
+    // Vrai = Son renderer est désactivé
+    bool isPickedUp = false;
 
     void Start()
     {
@@ -41,14 +45,10 @@ public class Item : MonoBehaviour {
                 } else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
-                   
-                    //IL FAUUDRAIT ATTENDR UN MOMENT AVANT L'OUVERTURE DU PORTAIL
 
-                    hit.transform.parent.parent.GetComponent<Animation>().Play();                    
-                    hit.collider.gameObject.SetActive(false);
-                    tryRespawn = true;
-                    gameObject.SetActive(false);
-                    HUD.Instance.RemoveItemHUD(Type);
+                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent));
+
+                    
                 }
 			}
 		}
@@ -56,7 +56,7 @@ public class Item : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.name == "Player") {
+        if (col.name == "Player" && !isPickedUp) {
 			col.GetComponent<Character>().RamasserObjet(gameObject);
             StartCoroutine(WaitAndDepop(1.5f));
         }
@@ -64,10 +64,29 @@ public class Item : MonoBehaviour {
 
     private IEnumerator WaitAndDepop(float seconds)
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(seconds);
-        gameObject.SetActive(false);
+        transform.FindChild("Model").gameObject.SetActive(false);
         tryRespawn = false;
+        isPickedUp = true;
+    }
+
+    private IEnumerator AnimPortailAndDepop(Transform portail)
+    {
+        yield return new WaitForSeconds(1.5f);
+        // Anime le portail ???
+        portail.GetComponent<Animation>().Play();
+        Debug.Log("Portail ouvert");
+        // Désactive le collider du portail
+        while(portail.GetComponent<Animation>().isPlaying)
+        {
+            hit.collider.gameObject.gameObject.SetActive(false);
+            tryRespawn = true;
+            gameObject.SetActive(false);
+            HUD.Instance.RemoveItemHUD(Type);
+            yield return null;
+        }
+
+        yield return null;
     }
 
     void OnDisable()

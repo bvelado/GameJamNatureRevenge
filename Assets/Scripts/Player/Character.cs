@@ -44,7 +44,7 @@ public class Character : MonoBehaviour {
 
         if(usingItem)
         {
-            Debug.Log("DOIT LANCER L'ANIMATION DE USEITEM");
+            
             this.transform.GetComponent<Animation>().CrossFade("UseItem");
         }
 
@@ -86,7 +86,7 @@ public class Character : MonoBehaviour {
 
     public void FinishPicking()
     {
-        Debug.Log("FINISH PICKING");
+        
         picking = false;
     }
 
@@ -97,13 +97,13 @@ public class Character : MonoBehaviour {
 
     public void startUsingItem()
     {
-        Debug.Log("USEITEM");
+        
         this.usingItem = true;
     }
 
     public void endUsingItem()
     {
-        Debug.Log("STOPITEM");
+        
         this.usingItem = false;
     }
 		
