@@ -61,6 +61,13 @@ public class Character : MonoBehaviour {
                         // Perd 1 vie
                         _hp = _maxHp;
                         _lives--;
+                        Debug.Log("PERTE D'UNE VIE");
+
+                        if(_lives == 2 || _lives == 1)
+                        {
+                            Debug.Log("VIES = " + _lives);
+                            mutation(_lives);
+                        }
                         
                     }
                 }
@@ -70,6 +77,30 @@ public class Character : MonoBehaviour {
         }
 	}
 	
+    void mutation(int lives)
+    {
+        Debug.Log("Fonction mutation");
+        string stade;
+
+        //Definition du stade de mutation
+        if(lives == 2)
+        {
+            stade = "Stade1";
+        }
+        else
+        {
+            stade = "Stade2";
+        }
+
+        Transform branches = this.transform.Find("Branches").FindChild(stade);
+
+        //Aparition des branches
+        for(int i=0; i < branches.childCount; i++)
+        {
+            branches.GetChild(i).GetComponent<SkinnedMeshRenderer>().enabled = true;
+        }
+
+    }
 	// Update is called once per frame
 	void Update ()
 	{
