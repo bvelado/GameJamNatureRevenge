@@ -28,6 +28,9 @@ public class Character : MonoBehaviour {
 		speed = 1.0f;
 		course = 1.0f;
         picking = false;
+
+        HUD.Instance.InitHP(_maxHp);
+        HUD.Instance.InitLives();
 	}
 	
 	// Update is called once per frame
