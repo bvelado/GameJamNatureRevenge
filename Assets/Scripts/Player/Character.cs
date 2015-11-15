@@ -35,6 +35,7 @@ public class Character : MonoBehaviour {
         isLighting = true;
         dying = false;
         StartCoroutine(refreshHeal());
+		Cursor.visible = false;
 
         HUD.Instance.InitHP(_maxHp);
         HUD.Instance.InitLives();
@@ -49,11 +50,11 @@ public class Character : MonoBehaviour {
             if (isLighting)
             {
                 if (_hp < _maxHp)
-                _hp++;
+                _hp+=6;
             }
             else
             {
-                _hp = _hp -5;
+                _hp -= 4;
                 if (_hp < 1)
                 {
                     Debug.Log("VIES AVANT LA REDUCTION = " + _lives);
@@ -143,6 +144,9 @@ public class Character : MonoBehaviour {
         if(dying)
         {
             this.transform.GetComponent<Animation>().CrossFade("death2");
+			HUD.Instance.showDeathMessage();
+
+			Application.LoadLevel("Level1");
         }
 
 		if (moveDirection != Vector3.zero && !picking) {
@@ -156,14 +160,14 @@ public class Character : MonoBehaviour {
 			this.transform.GetComponent<Animation> ().CrossFade ("Iddle");
 		}
 		if (Input.GetButton ("Course")) {
-			course = 1.5f; //On court
+			course = 1.8f; //On court
 			this.transform.GetComponent<Animation> ().CrossFade ("Run");
 		} else if (Input.GetButtonUp ("Course")) {
 			course = 1.0f; //On marche
 		}
 		if (Physics.Raycast (transform.position, new Vector3 (0, 1, 0), out hit, 9)) {
 			if (hit.collider.tag == "HautesHerbes") {
-				speed = 0.7f;
+				speed = 0.6f;
 			} else {
 				speed = 1.0f;
 			}

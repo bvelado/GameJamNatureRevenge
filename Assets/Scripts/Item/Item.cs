@@ -75,7 +75,7 @@ public class Item : MonoBehaviour {
     {
         Debug.Log("Detach Lucioles");
         StartCoroutine(DetachBocalFromPlayer(15.0f));
-        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection.normalized*600.0f);
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection.normalized*500.0f);
         GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
         HUD.Instance.RemoveItemHUD(Type);
     }
