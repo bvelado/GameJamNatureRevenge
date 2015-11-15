@@ -29,8 +29,10 @@ public class Inventaire : MonoBehaviour {
     {
         foreach(GameObject objet in objets)
         {
-            if(objet.GetComponent<Item>().Type == Item.ItemType.BocalLucioles)
+            Debug.Log("Pas lancé");
+            if (objet.GetComponent<Item>().Type == Item.ItemType.BocalLucioles)
             {
+                Debug.Log("Lancé");
                 objet.GetComponent<Item>().Throw();
             }
         }

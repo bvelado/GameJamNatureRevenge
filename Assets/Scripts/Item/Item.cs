@@ -38,10 +38,11 @@ public class Item : MonoBehaviour {
 
     public void Use()
     {
+        Debug.Log(gameObject.name);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (Physics.Raycast (player.transform.position, player.GetComponent<Character>().lastMoveDirection, out hit, 9f)) {
 			if (hit.distance<10){
-                if ((hit.collider.tag == "PlanteCraintive") && (Type == ItemType.Bocal))
+                if ((hit.collider.tag == "PlanteCraintive") && (Type == ItemType.BocalLucioles))
                 {
                     Debug.Log("Vous pouvez utiliser l'objet");
                     HUD.Instance.RemoveItemHUD(Type);
@@ -52,8 +53,8 @@ public class Item : MonoBehaviour {
                     player.GetComponent<Character>().startUsingItem();
                     HUD.Instance.RemoveItemHUD(Type);
                     HUD.Instance.AddItemHUD(ItemType.BocalLucioles);
-
-                    hit.collider.gameObject.SetActive(false);
+                    Type = ItemType.BocalLucioles;
+                    transform.FindChild("Light").gameObject.SetActive(true);
                 }
                 else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche))
                 {
@@ -63,7 +64,6 @@ public class Item : MonoBehaviour {
                     StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
 				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
                     StartCoroutine(DepopRonces(player, hit));
-                    
 				}
 			}
 		}
@@ -72,8 +72,10 @@ public class Item : MonoBehaviour {
     public void Throw()
     {
         Debug.Log("Detach Lucioles");
-        DetachBocalFromPlayer();
-        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 200.0f);
+        StartCoroutine(DetachBocalFromPlayer(15.0f));
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 600.0f + GameObject.Find("Player").transform.forward*600.0f);
+
+
     }
 
     void OnTriggerEnter(Collider col)
@@ -130,22 +132,26 @@ public class Item : MonoBehaviour {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             transform.FindChild("Model").gameObject.SetActive(false);
             transform.FindChild("Collider").gameObject.SetActive(false);
-            transform.FindChild("Light").gameObject.SetActive(true);
+            
             transform.GetComponent<Rigidbody>().isKinematic = true;
             isAttachedToPlayer = true;
             transform.SetParent(player.transform.FindChild("Items").transform);
         }
     }
 
-    void DetachBocalFromPlayer()
+    IEnumerator DetachBocalFromPlayer(float seconds)
     {
         if (isAttachedToPlayer) {
             transform.parent = null;
             transform.FindChild("Model").gameObject.SetActive(true);
             transform.FindChild("Collider").gameObject.SetActive(true);
-            transform.GetComponent<Rigidbody>().isKinematic = true;
-            isAttachedToPlayer = true;
-            
+            transform.GetComponent<Rigidbody>().isKinematic = false;
+            isAttachedToPlayer = false;
+
+            yield return new WaitForSeconds(seconds);
+
+            tryRespawn = true;
+            gameObject.SetActive(false);
         }
     }
 

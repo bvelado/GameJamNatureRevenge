@@ -171,6 +171,11 @@ public class Character : MonoBehaviour {
 		if (Input.GetButtonDown ("Utiliser")) {
 			GetComponent<Inventaire>().TryUseItems();
 		}
+
+        if(Input.GetButtonDown("Lancer"))
+        {
+            GetComponent<Inventaire>().TryThrowBocalLucioles();
+        }
 	}
 
 	public void RamasserObjet(GameObject obj){
