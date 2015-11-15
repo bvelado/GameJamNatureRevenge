@@ -12,17 +12,17 @@ public class Character : MonoBehaviour {
 
     private bool picking;
     private bool usingItem;
+    [HideInInspector]
+    public bool isLighting;
 
 	private float speed;
 	private float course;
 
     public int _maxHp, _maxLives;
     public int _hp, _lives;
-
-    public bool isLighting;
-
-    // Use this for initialization
-    void Start ()
+	
+	// Use this for initialization
+	void Start ()
 	{
 		controller = transform.GetComponent<CharacterController>();
         _hp = _maxHp;
@@ -61,10 +61,12 @@ public class Character : MonoBehaviour {
             //Debug.Log(_hp);
             yield return new WaitForSeconds(0.5f);
         }
-    }
-
-    // Update is called once per frame
-    void Update ()
+        HUD.Instance.InitHP(_maxHp);
+        HUD.Instance.InitLives();
+	}
+	
+	// Update is called once per frame
+	void Update ()
 	{
 		horizMove = Input.GetAxis ("Horizontal");
 		vertMove = Input.GetAxis ("Vertical");
@@ -139,4 +141,40 @@ public class Character : MonoBehaviour {
         
         this.usingItem = false;
     }
+		
+    public void Heal()
+    {
+        StartCoroutine(HealOneFloor());
+    }
+
+    IEnumerator HealOneFloor()
+    {
+        // Heale un pallier entier de vie
+        while(_hp < _maxHp)
+        {
+            _hp++;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        yield return null;
+    }
+
+    public void LoseHP(int hp)
+    {
+        if(_hp - hp < 0)
+        {
+            if(_lives < 0)
+            {
+                // GAME OVER
+            } else
+            {
+                // Perd 1 vie
+                _hp = _maxHp + (_hp - hp);
+                _lives--;
+            }
+        } else
+        {
+            _hp -= hp;
+        }
+    }
+
 }

@@ -6,7 +6,13 @@ public class HUD : MonoBehaviour {
 
     List<Item.ItemType> currentItems;
 
+    Stack<Image> lives;
+
+    public Slider hpSlider;
+    public Image live1, live2, live3, live4;
+
     public GameObject bocalImage, torcheImage, piedDeBicheImage, hacheImage;
+
     public Sprite bocalSprite, bocalLuciolesSprite;
 
     static HUD instance;
@@ -29,6 +35,27 @@ public class HUD : MonoBehaviour {
         }
 
         currentItems = new List<Item.ItemType>();
+
+        InitLives();
+        
+    }
+
+    
+    public void InitHP(int maxHp)
+    {
+        hpSlider.maxValue = maxHp;
+        hpSlider.value = maxHp;
+
+        Debug.Log(hpSlider.maxValue);
+    }
+
+    public void InitLives()
+    {
+        lives = new Stack<Image>();
+        lives.Push(live1);
+        lives.Push(live2);
+        lives.Push(live3);
+        lives.Push(live4);
     }
 
     public void AddItemHUD(Item.ItemType itemType)
@@ -91,5 +118,15 @@ public class HUD : MonoBehaviour {
                     break;
             }
         }
+    }
+
+    public void UpdateHP(int hp)
+    {
+        hpSlider.value = hp;
+    }
+
+    public void DecreaseLive()
+    {
+        lives.Pop();
     }
 }
