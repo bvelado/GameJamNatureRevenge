@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class monstersFollow : MonoBehaviour
 {
-    public GameObject player;
-    public Transform[] path;
+    public GameObject target;
+    public Transform[] waypoint;
     public FSMSystem fsm;
 
     public void SetTransition(Transition t) { fsm.PerformTransition(t); }
@@ -19,8 +19,8 @@ public class monstersFollow : MonoBehaviour
 
     public void FixedUpdate()
     {
-        fsm.CurrentState.Reason(player, gameObject);
-        fsm.CurrentState.Act(player, gameObject);
+        fsm.CurrentState.Reason(target, gameObject);
+        fsm.CurrentState.Act(target, gameObject);
     }
 
     // The NPC has two states: FollowPath and ChasePlayer
@@ -28,11 +28,14 @@ public class monstersFollow : MonoBehaviour
     // If it's on ChasePlayerState and LostPlayer transition is fired, it returns to FollowPath
     private void MakeFSM()
     {
-       
-
         ChasePlayerState chase = new ChasePlayerState();
         chase.AddTransition(Transition.LostPlayer, StateID.FollowingPath);
 
+        Vector3[] path = new Vector3[waypoint[0].childCount];
+        for (int i = 0; i < waypoint[0].childCount; i++)
+        {
+            path[i] = waypoint[0].GetChild(i).position;
+        }
         FollowPathState follow = new FollowPathState(path);
         follow.AddTransition(Transition.SawPlayer, StateID.ChasingPlayer);
 
@@ -40,29 +43,14 @@ public class monstersFollow : MonoBehaviour
         fsm.AddState(follow);
         fsm.AddState(chase);
     }
-
-    //void OnTriggerEnter(Collider col)
-    //{
-    //    if (col.tag == "Player")
-    //    {
-    //        RaycastHit hit;
-    //        if (Physics.Linecast(transform.position, col.transform.position, out hit))
-    //        {
-    //            if (hit.collider.tag == "Player")
-    //            {
-    //                GetComponent<monsterFollow>().SetTransition(Transition.SawPlayer);
-    //            }
-    //        }
-    //    }
-    //}
 }
 
 public class FollowPathState : FSMState
 {
     private int currentWayPoint;
-    private Transform[] waypoints;
+    private Vector3[] waypoints;
 
-    public FollowPathState(Transform[] wp)
+    public FollowPathState(Vector3[] wp)
     {
         waypoints = wp;
         currentWayPoint = 0;
@@ -80,22 +68,22 @@ public class FollowPathState : FSMState
     public override void Act(GameObject player, GameObject npc)
     {
 
-            Vector3 vel = npc.GetComponent<Rigidbody>().velocity;
-            Vector3 moveDir = waypoints[currentWayPoint].position - npc.transform.position;
-            if (moveDir.magnitude < 1)
+        Vector3 vel = npc.GetComponent<Rigidbody>().velocity;
+        Vector3 moveDir = waypoints[currentWayPoint] - npc.transform.position;
+        if (moveDir.magnitude < 1)
+        {
+            currentWayPoint++;
+            if (currentWayPoint >= waypoints.Length)
             {
-                currentWayPoint++;
-                if (currentWayPoint >= waypoints.Length)
-                {
-                    currentWayPoint = 0;
-                }
+                currentWayPoint = 0;
             }
-            else
-            {
+        }
+        else
+        {
 
-                npc.GetComponent<NavMeshAgent>().destination = waypoints[currentWayPoint].position;
-            }
-        
+            npc.GetComponent<NavMeshAgent>().destination = waypoints[currentWayPoint];
+        }
+
     }
 
 } // FollowPathState
@@ -112,7 +100,6 @@ public class ChasePlayerState : FSMState
         // If the player has gone 30 meters away from the NPC, fire LostPlayer transition
         if (Vector3.Distance(npc.transform.position, player.transform.position) >= 30)
         {
-
             npc.GetComponent<monstersFollow>().SetTransition(Transition.LostPlayer);
         }
 
@@ -122,21 +109,6 @@ public class ChasePlayerState : FSMState
     public override void Act(GameObject player, GameObject npc)
     {
         npc.GetComponent<NavMeshAgent>().destination = player.transform.position;
-        //// Follow the path of waypoints
-        //// Find the direction of the player 		
-        //Vector3 vel = npc.GetComponent<Rigidbody>().velocity;
-        //Vector3 moveDir = player.transform.position - npc.transform.position;
-
-        //// Rotate towards the waypoint
-        //npc.transform.rotation = Quaternion.Slerp(npc.transform.rotation,
-        //                                          Quaternion.LookRotation(moveDir),
-        //                                          5 * Time.deltaTime);
-        //npc.transform.eulerAngles = new Vector3(0, npc.transform.eulerAngles.y, 0);
-
-        //vel = moveDir.normalized * 10;
-
-        //// Apply the new Velocity
-        //npc.GetComponent<Rigidbody>().velocity = vel;
     }
 
 } // ChasePlayerState

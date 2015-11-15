@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class monster : monstersFollow
+public class monsterFollowLightOnly : monstersFollow
 {
 
     void OnTriggerStay(Collider col)
     {
+
         if ((col.tag == "Light") && (base.fsm.CurrentStateID == StateID.FollowingPath))
         {
+            base.target = col.gameObject;
             RaycastHit hit;
             if (Physics.Linecast(transform.position, col.transform.position, out hit))
             {

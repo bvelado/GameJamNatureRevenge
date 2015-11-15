@@ -10,6 +10,10 @@ TagManager:
   - Lucioles
   - Portail
   - PortailDoor
+  - PlanteCarnivore
+  - PlanteCraintive
+  - Musique2
+  - Light
   layers:
   - Default
   - TransparentFX

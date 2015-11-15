@@ -7,9 +7,6 @@ public class MusicGenerator : MonoBehaviour
 
     // Use this for initialization
     public static GameObject music;
-
-
-
     // Use this for initialization
     void Start()
     {
