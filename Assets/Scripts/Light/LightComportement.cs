@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class lightTest : MonoBehaviour {
+public class LightComportement : MonoBehaviour
+{
 
     void OnTriggerEnter(Collider col)
     {
