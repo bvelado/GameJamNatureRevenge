@@ -18,9 +18,11 @@ public class Character : MonoBehaviour {
 
     public int _maxHp, _maxLives;
     public int _hp, _lives;
-	
-	// Use this for initialization
-	void Start ()
+
+    public bool isLighting;
+
+    // Use this for initialization
+    void Start ()
 	{
 		controller = transform.GetComponent<CharacterController>();
         _hp = _maxHp;
@@ -28,10 +30,41 @@ public class Character : MonoBehaviour {
 		speed = 1.0f;
 		course = 1.0f;
         picking = false;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        isLighting = true;
+        StartCoroutine(refreshHeal());
+    }
+
+    
+
+    IEnumerator refreshHeal()
+    {
+        while (_lives > -1)
+        {
+            if (isLighting)
+            {
+                if (_hp < _maxHp)
+                _hp++;
+            }
+            else
+            {
+                _hp--;
+                if (_hp < 1)
+                {
+                    _lives--;
+                    if (_lives > -1)
+                    {
+                        // Perd 1 vie
+                        _hp = _maxHp;
+                    }
+                }
+            }
+            Debug.Log(_hp);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    // Update is called once per frame
+    void Update ()
 	{
 		horizMove = Input.GetAxis ("Horizontal");
 		vertMove = Input.GetAxis ("Vertical");
@@ -106,40 +139,4 @@ public class Character : MonoBehaviour {
         
         this.usingItem = false;
     }
-		
-    public void Heal()
-    {
-        StartCoroutine(HealOneFloor());
-    }
-
-    IEnumerator HealOneFloor()
-    {
-        // Heale un pallier entier de vie
-        while(_hp < _maxHp)
-        {
-            _hp++;
-            yield return new WaitForSeconds(Time.deltaTime);
-        }
-        yield return null;
-    }
-
-    public void LoseHP(int hp)
-    {
-        if(_hp - hp < 0)
-        {
-            if(_lives < 0)
-            {
-                // GAME OVER
-            } else
-            {
-                // Perd 1 vie
-                _hp = _maxHp + (_hp - hp);
-                _lives--;
-            }
-        } else
-        {
-            _hp -= hp;
-        }
-    }
-
 }
