@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class HUD : MonoBehaviour {
 
@@ -14,6 +15,8 @@ public class HUD : MonoBehaviour {
     public GameObject bocalImage, torcheImage, piedDeBicheImage, hacheImage;
 
     public Sprite bocalSprite, bocalLuciolesSprite;
+
+	public Text DeathMessage;
 
     static HUD instance;
     public static HUD Instance
@@ -126,6 +129,15 @@ public class HUD : MonoBehaviour {
 
     public void DecreaseLive()
     {
-        lives.Pop();
+        lives.Pop().gameObject.SetActive(false);
     }
+
+	public void showDeathMessage(){
+		StartCoroutine (Death());
+	}
+
+	IEnumerator Death(){
+		yield return new WaitForSeconds(4.0f);
+		DeathMessage.gameObject.SetActive (true);
+	}
 }

@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlanteCraintive : MonoBehaviour {
+public class ChangeLevel : MonoBehaviour {
+
+	public string level;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +16,8 @@ public class PlanteCraintive : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.tag == "BocalLucioles") {
-			Debug.Log ("Bocal a tué la plante");
-			Destroy(gameObject);
+		if (col.name == "Player") {
+			Application.LoadLevel (level);
 		}
 	}
-
 }

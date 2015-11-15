@@ -75,7 +75,7 @@ public class Item : MonoBehaviour {
     {
         Debug.Log("Detach Lucioles");
         StartCoroutine(DetachBocalFromPlayer(15.0f));
-        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection*1200.0f);
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 400.0f + GameObject.Find("Player").GetComponent<Character>().lastMoveDirection.normalized*500.0f);
         GameObject.Find("Player").GetComponent<Inventaire>().RemoveItem(gameObject);
         HUD.Instance.RemoveItemHUD(Type);
     }
@@ -132,6 +132,8 @@ public class Item : MonoBehaviour {
         {
             yield return new WaitForSeconds(seconds);
 
+            gameObject.tag = "Untagged";
+
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             transform.FindChild("Model").gameObject.SetActive(false);
             transform.FindChild("Collider").gameObject.SetActive(false);
@@ -145,6 +147,9 @@ public class Item : MonoBehaviour {
     IEnumerator DetachBocalFromPlayer(float seconds)
     {
         if (isAttachedToPlayer) {
+
+            gameObject.tag = "BocalLucioles";
+
             transform.parent = null;
             transform.FindChild("Model").gameObject.SetActive(true);
             transform.FindChild("Collider").gameObject.SetActive(true);
