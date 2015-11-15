@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class Inventaire : MonoBehaviour {
@@ -25,4 +24,15 @@ public class Inventaire : MonoBehaviour {
 			objet.GetComponent<Item>().Use();
 		}
 	}
+
+    public void TryThrowBocalLucioles()
+    {
+        foreach(GameObject objet in objets)
+        {
+            if(objet.GetComponent<Item>().Type == Item.ItemType.BocalLucioles)
+            {
+                objet.GetComponent<Item>().Throw();
+            }
+        }
+    }
 }

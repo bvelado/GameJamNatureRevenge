@@ -122,6 +122,8 @@ public class Character : MonoBehaviour {
         GetComponent<Inventaire>().AddItem(obj);
         Item.ItemType type = obj.GetComponent<Item>().Type;
         HUD.Instance.AddItemHUD(type);
+
+        obj.transform.SetParent(transform);
     }
 
     public void FinishPicking()

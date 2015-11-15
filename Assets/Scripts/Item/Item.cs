@@ -28,6 +28,8 @@ public class Item : MonoBehaviour {
     // Vrai = Son renderer est désactivé
     bool isPickedUp = false;
 
+    bool isAttachedToPlayer = false;
+
     void Start()
     {
         spawnPointPosition = transform.position;
@@ -37,29 +39,59 @@ public class Item : MonoBehaviour {
     public void Use()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-		if (Physics.Raycast (player.transform.position, player.transform.forward, out hit, 9f)) {
+		if (Physics.Raycast (player.transform.position, player.GetComponent<Character>().lastMoveDirection, out hit, 9f)) {
 			if (hit.distance<10){
-                if ((hit.collider.tag=="PlanteCraintive") && (Type == ItemType.Bocal)){
-					Debug.Log ("Vous pouvez utiliser l'objet");
+                if ((hit.collider.tag == "PlanteCraintive") && (Type == ItemType.Bocal))
+                {
+                    Debug.Log("Vous pouvez utiliser l'objet");
                     HUD.Instance.RemoveItemHUD(Type);
-                } else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche)) {
+                }
+                else if ((hit.collider.tag == "Lucioles") && (Type == ItemType.Bocal))
+                {
+                    Debug.Log("Oh des lucioles");
+                    player.GetComponent<Character>().startUsingItem();
+                    HUD.Instance.RemoveItemHUD(Type);
+                    HUD.Instance.AddItemHUD(ItemType.BocalLucioles);
+
+                    hit.collider.gameObject.SetActive(false);
+                }
+                else if ((hit.collider.tag == "PortailDoor") && (Type == ItemType.PiedDeBiche))
+                {
                     Debug.Log("Ouverture du portail");
                     player.GetComponent<Character>().startUsingItem();
 
-                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent)); 
-				}else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche)) {
-					Debug.Log("Ca brule");
-					player.GetComponent<Character>().startUsingItem();
-				}
+                    StartCoroutine(AnimPortailAndDepop(hit.transform.parent.parent));
+                }
+                else if ((hit.collider.tag == "Ronces") && (Type == ItemType.Torche))
+                {
+                    Debug.Log("Ca brule");
+                    player.GetComponent<Character>().startUsingItem();
+                }
 			}
 		}
+    }
+
+    public void Throw()
+    {
+        Debug.Log("Detach Lucioles");
+        DetachBocalFromPlayer();
+        transform.GetComponent<Rigidbody>().AddForce(Vector3.up * 200.0f);
     }
 
     void OnTriggerEnter(Collider col)
     {
         if (col.name == "Player" && !isPickedUp) {
 			col.GetComponent<Character>().RamasserObjet(gameObject);
-            StartCoroutine(WaitAndDepop(1.5f));
+            tryRespawn = false;
+            isPickedUp = true;
+
+            if (Type == ItemType.Bocal)
+            {
+                StartCoroutine(AttachBocalToPlayer(1.5f));
+            } else
+            {
+                StartCoroutine(WaitAndDepop(1.5f));
+            }
         }
     }
 
@@ -67,8 +99,6 @@ public class Item : MonoBehaviour {
     {
         yield return new WaitForSeconds(seconds);
         transform.FindChild("Model").gameObject.SetActive(false);
-        tryRespawn = false;
-        isPickedUp = true;
     }
 
     private IEnumerator AnimPortailAndDepop(Transform portail)
@@ -88,6 +118,34 @@ public class Item : MonoBehaviour {
         }
 
         yield return null;
+    }
+
+    IEnumerator AttachBocalToPlayer(float seconds)
+    {
+        if(!isAttachedToPlayer)
+        {
+            yield return new WaitForSeconds(seconds);
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            transform.FindChild("Model").gameObject.SetActive(false);
+            transform.FindChild("Collider").gameObject.SetActive(false);
+            transform.FindChild("Light").gameObject.SetActive(true);
+            transform.GetComponent<Rigidbody>().isKinematic = true;
+            isAttachedToPlayer = true;
+            transform.SetParent(player.transform.FindChild("Items").transform);
+        }
+    }
+
+    void DetachBocalFromPlayer()
+    {
+        if (isAttachedToPlayer) {
+            transform.parent = null;
+            transform.FindChild("Model").gameObject.SetActive(true);
+            transform.FindChild("Collider").gameObject.SetActive(true);
+            transform.GetComponent<Rigidbody>().isKinematic = true;
+            isAttachedToPlayer = true;
+            
+        }
     }
 
     void OnDisable()
