@@ -58,7 +58,7 @@ public class Character : MonoBehaviour {
                     }
                 }
             }
-            Debug.Log(_hp);
+            //Debug.Log(_hp);
             yield return new WaitForSeconds(0.5f);
         }
     }
