@@ -33,6 +33,9 @@ public class Character : MonoBehaviour {
         picking = false;
         isLighting = true;
         StartCoroutine(refreshHeal());
+
+        HUD.Instance.InitHP(_maxHp);
+        HUD.Instance.InitLives();
     }
 
     
