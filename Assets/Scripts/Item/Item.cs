@@ -42,7 +42,7 @@ public class Item : MonoBehaviour {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 		if (Physics.Raycast (player.transform.position, player.GetComponent<Character>().lastMoveDirection, out hit, 9f)) {
 			if (hit.distance<10){
-                if ((hit.collider.tag == "PlanteCraintive") && (Type == ItemType.BocalLucioles))
+                if ((hit.collider.tag == "ZonePlante") && (Type == ItemType.BocalLucioles))
                 {
                     Debug.Log("Vous pouvez utiliser l'objet");
                     HUD.Instance.RemoveItemHUD(Type);

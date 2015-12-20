@@ -10,19 +10,8 @@ public class Character : MonoBehaviour {
 	private float vertMove;
 	private RaycastHit hit;
 
-    //Gestion Audio
-
-    public AudioClip touch;
-    public AudioClip death;
-    public AudioClip step1;
-    public AudioClip step2;
-    public AudioClip attack;
-    public AudioClip throwItem;
-    AudioSource audio;
-
     private bool picking;
     private bool usingItem;
-    private bool touched;
     [HideInInspector]
     public bool isLighting;
     private bool dying;
@@ -33,6 +22,8 @@ public class Character : MonoBehaviour {
     public int _maxHp, _maxLives;
     [HideInInspector]
     public int _hp, _lives;
+
+	private bool touched;
 	
 	// Use this for initialization
 	void Start ()
@@ -45,14 +36,11 @@ public class Character : MonoBehaviour {
         picking = false;
         isLighting = true;
         dying = false;
-        touched = false;
         StartCoroutine(refreshHeal());
 		Cursor.visible = false;
 
         HUD.Instance.InitHP(_maxHp);
         HUD.Instance.InitLives();
-
-        audio = GetComponent<AudioSource>();
     }
 
     
@@ -133,7 +121,8 @@ public class Character : MonoBehaviour {
         //TODO /!\ Dans la fonction declencher la fonction GameOver de la classe Globale au jeu
     }
 
-  
+
+
 
 
     // Update is called once per frame
@@ -156,16 +145,13 @@ public class Character : MonoBehaviour {
 
         if(dying)
         {
-            this.transform.GetComponent<Animation>().CrossFade("death2");
-			HUD.Instance.showDeathMessage();
-
-			Application.LoadLevel("Level1");
+			StartCoroutine(Mort ());
         }
 
-        if(touched)
-        {
-            this.transform.GetComponent<Animation>().CrossFade("hit");
-        }
+		if(touched)
+		{
+			this.transform.GetComponent<Animation>().CrossFade("hit");
+		}
 
 		if (moveDirection != Vector3.zero && !picking) {
 			this.transform.GetComponent<Animation> ().CrossFade ("Walk");
@@ -228,7 +214,8 @@ public class Character : MonoBehaviour {
     }
 
     public void endUsingItem()
-    {       
+    {
+        
         this.usingItem = false;
     }
 		
@@ -237,12 +224,10 @@ public class Character : MonoBehaviour {
         StartCoroutine(HealOneFloor());
     }
 
-    public void endTouched()
-    {
-        touched = false;
-    }
-
-
+	public void endTouched()
+	{
+		touched = false;
+	}
 
     IEnumerator HealOneFloor()
     {
@@ -274,27 +259,6 @@ public class Character : MonoBehaviour {
         }
     }
 
-    //PARTIE SON
-
-    public void song(AudioClip song)
-    {
-        audio.PlayOneShot(song);
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        Debug.Log("COLLISION !!!!");
-        Debug.Log("TAG = " + col.gameObject.tag);
-
-        if(col.gameObject.tag == "Enemy")
-        {
-            touched = true;
-        }
-
-       
-        
-    }
-
     void OnTriggerStay(Collider col)
     {
         if (col.gameObject.tag == "ZonePlante")
@@ -316,5 +280,34 @@ public class Character : MonoBehaviour {
             HUD.Instance.displayTuto("");
         }
     }
+
+	IEnumerator Mort(){
+		this.transform.GetComponent<Animation>().CrossFade("death2");
+		HUD.Instance.showDeathMessage();
+		yield return new WaitForSeconds (4.0f);
+		Application.LoadLevel("Level1");
+	}
+
+	//PARTIE SON
+	
+	public void song(AudioClip song)
+	{
+		GetComponent<AudioSource>().PlayOneShot(song);
+	}
+	
+	void OnTriggerEnter(Collider col)
+	{
+		Debug.Log("COLLISION !!!!");
+		Debug.Log("TAG = " + col.gameObject.tag);
+		
+		if(col.gameObject.tag == "Enemy")
+		{
+			touched = true;
+		}
+		
+		
+	}
+	
+
 
 }

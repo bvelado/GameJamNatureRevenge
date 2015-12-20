@@ -27814,7 +27814,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: .200000003
+  - time: .288888901
     functionName: song
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: dbda287d1cf3f864aaed1d40698ff48e,
@@ -27822,7 +27822,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: .48888889
+  - time: .577777803
     functionName: song
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 82dc83abbdea374408b74a24585306ec,
