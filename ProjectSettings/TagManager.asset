@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Wall
-  - HautesHerbes
-  - Lucioles
-  - Portail
-  - PortailDoor
-  - PlanteCarnivore
-  - PlanteCraintive
-  - Musique2
-  - Light
-  - Ronces
-  - BocalLucioles
-<<<<<<< HEAD
-  - ZonePlante
-  - tuto
-=======
->>>>>>> 1d0d09531f734c41969994df637e2a53a59fc52b
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -30,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - Wall
-  - Player
-  - Torche
+  - 
+  - 
+  - 
   - 
   - 
   - 
