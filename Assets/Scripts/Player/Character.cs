@@ -24,6 +24,9 @@ public class Character : MonoBehaviour {
     public int _hp, _lives;
 
 	private bool touched;
+
+    public bool haveBocal;
+    public bool havePDB;
 	
 	// Use this for initialization
 	void Start ()
@@ -38,6 +41,9 @@ public class Character : MonoBehaviour {
         dying = false;
         StartCoroutine(refreshHeal());
 		Cursor.visible = false;
+
+        haveBocal = false;
+        havePDB = false;
 
         HUD.Instance.InitHP(_maxHp);
         HUD.Instance.InitLives();
@@ -193,6 +199,15 @@ public class Character : MonoBehaviour {
         Item.ItemType type = obj.GetComponent<Item>().Type;
         HUD.Instance.AddItemHUD(type);
 
+        if(obj.gameObject.name == "Bocal")
+        {
+            haveBocal = true;
+        }
+        else if(obj.gameObject.name == "PiedDeBiche")
+        {
+            havePDB = true;
+        }
+
         obj.transform.SetParent(transform);
     }
 
@@ -268,7 +283,34 @@ public class Character : MonoBehaviour {
 
         if (col.gameObject.tag == "tuto")
         {
-            HUD.Instance.displayTuto(col.gameObject.name);
+
+            if(col.gameObject.name == "Zone6")
+            {
+                if(!haveBocal)
+                {
+                    HUD.Instance.displayTuto(col.gameObject.name+"A");
+                }
+                else
+                {
+                    HUD.Instance.displayTuto(col.gameObject.name + "B");
+                }
+            }
+            else if(col.gameObject.name == "Zone8")
+            {
+                if(!havePDB)
+                {
+                    HUD.Instance.displayTuto(col.gameObject.name + "A");
+                }
+                else
+                {
+                    HUD.Instance.displayTuto(col.gameObject.name + "B");
+                }
+            }
+            else
+            {
+                HUD.Instance.displayTuto(col.gameObject.name);
+            }
+            
         }
 
     }

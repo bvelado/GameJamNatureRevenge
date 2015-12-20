@@ -55,6 +55,20 @@ public class HUD : MonoBehaviour {
                 break;
             case "Zone3": tutoriel = "De la lumiére ! Enfin !";
                 break;
+            case "Zone4": tutoriel = "Un bocal ? Je devrais pouvoir attraper ces lucioles avec ca";
+                break;
+            case "Zone5": tutoriel = "Qu'est ce que c'est ? Des lucioles ?";
+                break;
+            case "Zone6A": tutoriel = "Woah ! Quel est ce monstre ??";
+                break;
+            case "Zone6B": tutoriel = "Et si je lui lançais le bocal ?";
+                break;
+            case "Zone7": tutoriel = "Un pied de biche ! Ce sera utile a un moment donné !";
+                break;
+            case "Zone8A": tutoriel = "Mince c'est fermé ! Il me faut de quoi crocheter la serrure !";
+                break;
+            case "Zone8B": tutoriel = "Le pied de biche devrait faire l'affaire ! ";
+                break;
             default: tutoriel = "";
                 break;
         }
