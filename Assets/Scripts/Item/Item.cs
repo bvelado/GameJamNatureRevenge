@@ -82,7 +82,11 @@ public class Item : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.name == "Player" && !isPickedUp) {
+        Debug.Log("COLLISION AVEC L'ITEM ! TAG = "+col.gameObject.tag);
+        Debug.Log("PICKED UP = " + isPickedUp);
+
+        if (col.gameObject.tag == "Player" && !isPickedUp) {
+            Debug.Log("Player detecté !");
 			col.GetComponent<Character>().RamasserObjet(gameObject);
             tryRespawn = false;
             isPickedUp = true;
