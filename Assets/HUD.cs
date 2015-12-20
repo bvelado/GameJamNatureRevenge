@@ -43,7 +43,25 @@ public class HUD : MonoBehaviour {
         
     }
 
-    
+    public void displayTuto(string tuto)
+    {
+        string tutoriel;
+
+        switch(tuto)
+        {
+            case "Zone1": tutoriel = "Je dois partir...";
+                break;
+            case "Zone2": tutoriel = "Ces ténébres me pèsent...";
+                break;
+            case "Zone3": tutoriel = "De la lumiére ! Enfin !";
+                break;
+            default: tutoriel = "";
+                break;
+        }
+
+        transform.Find("Tutoriel").GetComponent<Text>().text = tutoriel;
+    }
+
     public void InitHP(int maxHp)
     {
         Debug.Log(maxHp);

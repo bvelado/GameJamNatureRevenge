@@ -259,6 +259,28 @@ public class Character : MonoBehaviour {
         }
     }
 
+    void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.tag == "ZonePlante")
+        {
+            col.GetComponent<PlanteCarnivore>().becomeAgressive();
+        }
+
+        if (col.gameObject.tag == "tuto")
+        {
+            HUD.Instance.displayTuto(col.gameObject.name);
+        }
+
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if(col.gameObject.tag == "tuto")
+        {
+            HUD.Instance.displayTuto("");
+        }
+    }
+
 	IEnumerator Mort(){
 		this.transform.GetComponent<Animation>().CrossFade("death2");
 		HUD.Instance.showDeathMessage();
@@ -286,12 +308,6 @@ public class Character : MonoBehaviour {
 		
 	}
 	
-	void OnTriggerStay(Collider col)
-	{
-		if (col.gameObject.tag == "ZonePlante")
-		{
-			col.GetComponent<PlanteCarnivore>().becomeAgressive();
-		}
-	}
+
 
 }
