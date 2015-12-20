@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 public class Inventaire : MonoBehaviour {
 
-
 	private List<GameObject> objets = new List<GameObject>();
 
     public void Awake()
