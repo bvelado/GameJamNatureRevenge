@@ -291,6 +291,7 @@ public class Character : MonoBehaviour {
             touched = true;
         }
 
+       
         
     }
 
@@ -299,6 +300,20 @@ public class Character : MonoBehaviour {
         if (col.gameObject.tag == "ZonePlante")
         {
             col.GetComponent<PlanteCarnivore>().becomeAgressive();
+        }
+
+        if (col.gameObject.tag == "tuto")
+        {
+            HUD.Instance.displayTuto(col.gameObject.name);
+        }
+
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if(col.gameObject.tag == "tuto")
+        {
+            HUD.Instance.displayTuto("");
         }
     }
 

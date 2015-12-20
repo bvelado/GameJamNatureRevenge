@@ -17,6 +17,7 @@ TagManager:
   - Ronces
   - BocalLucioles
   - ZonePlante
+  - tuto
   layers:
   - Default
   - TransparentFX
