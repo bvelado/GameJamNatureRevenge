@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 330d0e1ec470bc34ea1133a3ec9f4238
-timeCreated: 1450625937
+guid: a55c9e83a1237a248b4b467f8c33d010
+timeCreated: 1450629712
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -10,7 +10,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: DALLE_up_down
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -69,7 +68,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
